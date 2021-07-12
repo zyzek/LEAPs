@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "snx-sips",
+    title: "Synthetix SIPs & SCCPs",
   },
   plugins: [
     "gatsby-plugin-postcss",
@@ -15,6 +15,22 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "sips",
+        path: "./src/sips/",
+      },
+      __key: "sips",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "sccp",
+        path: "./src/sccp/",
+      },
+      __key: "sccp",
     },
   ],
 };
