@@ -1,36 +1,55 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Synthetix SIPs & SCCPs",
+    siteUrl: 'https://www.yourdomain.tld',
+    title: 'Synthetix SIPs & SCCPs',
   },
   plugins: [
-    "gatsby-plugin-postcss",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
-    "gatsby-transformer-remark",
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-postcss',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-plugin-graphql-codegen',
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        fileName: './src/gql.ts',
       },
-      __key: "pages",
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "sips",
-        path: "./src/sips/",
+        name: 'pages',
+        path: './src/pages/',
       },
-      __key: "sips",
+      __key: 'pages',
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "sccp",
-        path: "./src/sccp/",
+        name: 'content',
+        path: './content',
       },
-      __key: "sccp",
+      __key: 'content',
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-emoji',
+            options: {
+              emojiConversion: 'shortnameToImage',
+            },
+          },
+          `gatsby-remark-static-images`,
+          `gatsby-remark-autolink-headers`,
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              ignoreFileExtensions: [],
+            },
+          },
+        ],
+      },
     },
   ],
-};
+}
