@@ -6,6 +6,7 @@ import statuses from '../utils/statuses'
 import { AllSccpQuery } from '../gql'
 import Main from '../layout/Main'
 import { StatusTable } from '../components/StatusTable'
+import { StatusLabel } from '../components/StatusLabel'
 
 interface Props {
   data: AllSccpQuery
@@ -32,7 +33,7 @@ const Template: React.FC<Props> = ({ data: { allMarkdownRemark } }) => {
           )(g.nodes)
           return (
             <div key={g.fieldValue}>
-              <h2>{g.fieldValue}</h2>
+              <StatusLabel label={g.fieldValue} />
               <StatusTable rows={rows as any} />
             </div>
           )
