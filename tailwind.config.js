@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  purge: ['./src/**/*.jsx', './src/**/*.tsx'],
   darkMode: false, // or 'media' or 'class'
   corePlugins: {
     preflight: false,
