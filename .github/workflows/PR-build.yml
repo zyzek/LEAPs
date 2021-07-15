@@ -1,4 +1,4 @@
-name: Gatsby PR build
+name: gatsby-pr-build
 
 on:
   pull_request:
