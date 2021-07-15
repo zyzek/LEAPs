@@ -3,8 +3,11 @@ const glob = require('glob')
 const fm = require('front-matter')
 const statuses = require('./statuses')
 const fs = require('fs/promises')
+const { promisify } = require('util')
+const g = promisify(glob)
 
 const commonValidationSchema = Yup.object().shape({
+  file: Yup.string().required(),
   title: Yup.string().required(),
   status: Yup.string().oneOf(statuses),
   author: Yup.string().required(),
@@ -24,41 +27,32 @@ const sccpValidationSchema = commonValidationSchema.concat(
   }),
 )
 
-;(() => {
+;(async () => {
   try {
+    const sips = await g('./content/sips/*.md')
+    const sccp = await g('./content/sccp/*.md')
+
     // SIP
-    glob('./content/sips/*.md', async (err, files) => {
-      files.forEach(async (file) => {
+    await Promise.all(
+      sips.map(async (file) => {
         const content = await fs.readFile(file, 'utf-8')
         const { attributes } = fm(content)
-        try {
-          await sipValidationSchema.validate(attributes)
-        } catch (error) {
-          console.error({
-            file,
-            errors: error.errors,
-            value: error.value,
-          })
-        }
-      })
-    })
+        return await sipValidationSchema.validate({ file, ...attributes })
+      }),
+    )
     // SCCP
-    glob('./content/sccp/*.md', async (err, files) => {
-      files.forEach(async (file) => {
+    await Promise.all(
+      sccp.map(async (file) => {
         const content = await fs.readFile(file, 'utf-8')
         const { attributes } = fm(content)
-        try {
-          await sccpValidationSchema.validate(attributes)
-        } catch (error) {
-          console.error({
-            file,
-            errors: error.errors,
-            value: error.value,
-          })
-        }
-      })
-    })
+        return await sccpValidationSchema.validate({ file, ...attributes })
+      }),
+    )
   } catch (error) {
-    console.error(error)
+    console.error({
+      value: error.value,
+      errors: error.errors,
+    })
+    process.exit(1)
   }
 })()
