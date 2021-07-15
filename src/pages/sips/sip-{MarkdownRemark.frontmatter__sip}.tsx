@@ -31,7 +31,7 @@ const Template: React.FC<Props> = ({ data }) => {
 export default Template
 
 export const pageQuery = graphql`
-  query sipPage($frontmatter__sip: Int!) {
+  query sipPage($frontmatter__sip: Int) {
     markdownRemark(frontmatter: { sip: { eq: $frontmatter__sip } }) {
       frontmatter {
         ...SipFrontmatter
