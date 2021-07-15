@@ -254,8 +254,6 @@ export type DirectoryCtimeArgs = {
 export type Site = Node & {
   buildTime?: Maybe<Scalars['Date']>;
   siteMetadata?: Maybe<SiteSiteMetadata>;
-  port?: Maybe<Scalars['Int']>;
-  host?: Maybe<Scalars['String']>;
   polyfill?: Maybe<Scalars['Boolean']>;
   pathPrefix?: Maybe<Scalars['String']>;
   id: Scalars['ID'];
@@ -310,14 +308,14 @@ export type SitePage = Node & {
 
 export type SitePageContext = {
   id?: Maybe<Scalars['String']>;
-  frontmatter__sip?: Maybe<Scalars['Int']>;
-  _xparams?: Maybe<SitePageContext_Xparams>;
   frontmatter__sccp?: Maybe<Scalars['Int']>;
+  _xparams?: Maybe<SitePageContext_Xparams>;
+  frontmatter__sip?: Maybe<Scalars['Int']>;
 };
 
 export type SitePageContext_Xparams = {
-  frontmatter__sip?: Maybe<Scalars['String']>;
   frontmatter__sccp?: Maybe<Scalars['String']>;
+  frontmatter__sip?: Maybe<Scalars['String']>;
 };
 
 export type MarkdownHeading = {
@@ -397,15 +395,15 @@ export type MarkdownRemarkGatsbyPathArgs = {
 
 export type MarkdownRemarkFrontmatter = {
   title?: Maybe<Scalars['String']>;
-  sip?: Maybe<Scalars['Int']>;
-  status?: Maybe<Scalars['String']>;
+  sccp?: Maybe<Scalars['Int']>;
   author?: Maybe<Scalars['String']>;
+  status?: Maybe<Scalars['String']>;
   discussions_to?: Maybe<Scalars['String']>;
   created?: Maybe<Scalars['String']>;
-  updated?: Maybe<Scalars['String']>;
   requires?: Maybe<Scalars['String']>;
+  sip?: Maybe<Scalars['Int']>;
+  updated?: Maybe<Scalars['String']>;
   Updated?: Maybe<Scalars['Date']>;
-  sccp?: Maybe<Scalars['Int']>;
 };
 
 
@@ -637,8 +635,6 @@ export type QueryAllDirectoryArgs = {
 export type QuerySiteArgs = {
   buildTime?: Maybe<DateQueryOperatorInput>;
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
-  port?: Maybe<IntQueryOperatorInput>;
-  host?: Maybe<StringQueryOperatorInput>;
   polyfill?: Maybe<BooleanQueryOperatorInput>;
   pathPrefix?: Maybe<StringQueryOperatorInput>;
   id?: Maybe<StringQueryOperatorInput>;
@@ -840,15 +836,15 @@ export type MarkdownRemarkFilterInput = {
 
 export type MarkdownRemarkFrontmatterFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
-  sip?: Maybe<IntQueryOperatorInput>;
-  status?: Maybe<StringQueryOperatorInput>;
+  sccp?: Maybe<IntQueryOperatorInput>;
   author?: Maybe<StringQueryOperatorInput>;
+  status?: Maybe<StringQueryOperatorInput>;
   discussions_to?: Maybe<StringQueryOperatorInput>;
   created?: Maybe<StringQueryOperatorInput>;
-  updated?: Maybe<StringQueryOperatorInput>;
   requires?: Maybe<StringQueryOperatorInput>;
+  sip?: Maybe<IntQueryOperatorInput>;
+  updated?: Maybe<StringQueryOperatorInput>;
   Updated?: Maybe<DateQueryOperatorInput>;
-  sccp?: Maybe<IntQueryOperatorInput>;
 };
 
 export type JsonQueryOperatorInput = {
@@ -998,15 +994,15 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark'
   | 'childrenMarkdownRemark___id'
   | 'childrenMarkdownRemark___frontmatter___title'
-  | 'childrenMarkdownRemark___frontmatter___sip'
-  | 'childrenMarkdownRemark___frontmatter___status'
+  | 'childrenMarkdownRemark___frontmatter___sccp'
   | 'childrenMarkdownRemark___frontmatter___author'
+  | 'childrenMarkdownRemark___frontmatter___status'
   | 'childrenMarkdownRemark___frontmatter___discussions_to'
   | 'childrenMarkdownRemark___frontmatter___created'
-  | 'childrenMarkdownRemark___frontmatter___updated'
   | 'childrenMarkdownRemark___frontmatter___requires'
+  | 'childrenMarkdownRemark___frontmatter___sip'
+  | 'childrenMarkdownRemark___frontmatter___updated'
   | 'childrenMarkdownRemark___frontmatter___Updated'
-  | 'childrenMarkdownRemark___frontmatter___sccp'
   | 'childrenMarkdownRemark___excerpt'
   | 'childrenMarkdownRemark___rawMarkdownBody'
   | 'childrenMarkdownRemark___fileAbsolutePath'
@@ -1062,15 +1058,15 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark___internal___type'
   | 'childMarkdownRemark___id'
   | 'childMarkdownRemark___frontmatter___title'
-  | 'childMarkdownRemark___frontmatter___sip'
-  | 'childMarkdownRemark___frontmatter___status'
+  | 'childMarkdownRemark___frontmatter___sccp'
   | 'childMarkdownRemark___frontmatter___author'
+  | 'childMarkdownRemark___frontmatter___status'
   | 'childMarkdownRemark___frontmatter___discussions_to'
   | 'childMarkdownRemark___frontmatter___created'
-  | 'childMarkdownRemark___frontmatter___updated'
   | 'childMarkdownRemark___frontmatter___requires'
+  | 'childMarkdownRemark___frontmatter___sip'
+  | 'childMarkdownRemark___frontmatter___updated'
   | 'childMarkdownRemark___frontmatter___Updated'
-  | 'childMarkdownRemark___frontmatter___sccp'
   | 'childMarkdownRemark___excerpt'
   | 'childMarkdownRemark___rawMarkdownBody'
   | 'childMarkdownRemark___fileAbsolutePath'
@@ -1548,8 +1544,6 @@ export type SiteFieldsEnum =
   | 'siteMetadata___title'
   | 'siteMetadata___description'
   | 'siteMetadata___siteUrl'
-  | 'port'
-  | 'host'
   | 'polyfill'
   | 'pathPrefix'
   | 'id'
@@ -1651,8 +1645,6 @@ export type SiteGroupConnection = {
 export type SiteFilterInput = {
   buildTime?: Maybe<DateQueryOperatorInput>;
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
-  port?: Maybe<IntQueryOperatorInput>;
-  host?: Maybe<StringQueryOperatorInput>;
   polyfill?: Maybe<BooleanQueryOperatorInput>;
   pathPrefix?: Maybe<StringQueryOperatorInput>;
   id?: Maybe<StringQueryOperatorInput>;
@@ -1836,14 +1828,14 @@ export type SiteFunctionSortInput = {
 
 export type SitePageContextFilterInput = {
   id?: Maybe<StringQueryOperatorInput>;
-  frontmatter__sip?: Maybe<IntQueryOperatorInput>;
-  _xparams?: Maybe<SitePageContext_XparamsFilterInput>;
   frontmatter__sccp?: Maybe<IntQueryOperatorInput>;
+  _xparams?: Maybe<SitePageContext_XparamsFilterInput>;
+  frontmatter__sip?: Maybe<IntQueryOperatorInput>;
 };
 
 export type SitePageContext_XparamsFilterInput = {
-  frontmatter__sip?: Maybe<StringQueryOperatorInput>;
   frontmatter__sccp?: Maybe<StringQueryOperatorInput>;
+  frontmatter__sip?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePluginFilterInput = {
@@ -2081,10 +2073,10 @@ export type SitePageFieldsEnum =
   | 'internal___type'
   | 'isCreatedByStatefulCreatePages'
   | 'context___id'
-  | 'context___frontmatter__sip'
-  | 'context____xparams___frontmatter__sip'
-  | 'context____xparams___frontmatter__sccp'
   | 'context___frontmatter__sccp'
+  | 'context____xparams___frontmatter__sccp'
+  | 'context____xparams___frontmatter__sip'
+  | 'context___frontmatter__sip'
   | 'pluginCreator___id'
   | 'pluginCreator___parent___id'
   | 'pluginCreator___parent___parent___id'
@@ -2249,15 +2241,15 @@ export type MarkdownRemarkEdge = {
 export type MarkdownRemarkFieldsEnum =
   | 'id'
   | 'frontmatter___title'
-  | 'frontmatter___sip'
-  | 'frontmatter___status'
+  | 'frontmatter___sccp'
   | 'frontmatter___author'
+  | 'frontmatter___status'
   | 'frontmatter___discussions_to'
   | 'frontmatter___created'
-  | 'frontmatter___updated'
   | 'frontmatter___requires'
+  | 'frontmatter___sip'
+  | 'frontmatter___updated'
   | 'frontmatter___Updated'
-  | 'frontmatter___sccp'
   | 'excerpt'
   | 'rawMarkdownBody'
   | 'fileAbsolutePath'
@@ -2751,7 +2743,7 @@ export type AllSipsQuery = { allMarkdownRemark: { group: Array<(
     )> } };
 
 export type SipPageQueryVariables = Exact<{
-  frontmatter__sip: Scalars['Int'];
+  frontmatter__sip?: Maybe<Scalars['Int']>;
 }>;
 
 
