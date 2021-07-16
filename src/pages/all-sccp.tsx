@@ -27,7 +27,7 @@ const Template: React.FC<Props> = ({ data: { allMarkdownRemark } }) => {
       </header>
       <div className="post-content">
         {columns.map((g) => {
-          const rows = flow(sortBy('frontmatter.sccp'))(g.nodes)
+          const rows = sortBy('frontmatter.sccp')(g.nodes)
           return (
             <div key={g.fieldValue}>
               <StatusLabel label={g.fieldValue} />
