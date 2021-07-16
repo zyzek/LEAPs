@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { sortBy, filter, flow } from 'lodash/fp'
 
-import statuses from '../utils/statuses'
+import statuses from '../../ci/statuses'
 import { AllSccpQuery } from '../../types/gql'
 import Main from '../layout/Main'
 import { StatusTable } from '../components/StatusTable'
