@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import React from 'react'
-import { MarkdownRemark } from '../gql'
+import { MarkdownRemark } from '../../types/gql'
 import { AuthorList } from './AuthorList'
 
 interface Props {

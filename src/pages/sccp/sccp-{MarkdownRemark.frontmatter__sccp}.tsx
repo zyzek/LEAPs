@@ -4,20 +4,21 @@ import { graphql } from 'gatsby'
 import Main from '../../layout/Main'
 import FrontmatterTable from '../../components/FrontmatterTable'
 import SourceIcon from '../../icons/Source'
-import { SipPageQuery } from '../../../types/gql'
+import { SccpPageQuery } from '../../../types/gql'
 
 interface Props {
   frontmatter__sip: number
-  data: SipPageQuery
+  data: SccpPageQuery
 }
 
 const Template: React.FC<Props> = ({ data }) => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
+  console.log(frontmatter)
   return (
     <Main>
       <h1 className="page-heading">
-        SIP-{frontmatter.sip}: {frontmatter.title}{' '}
+        SCCP-{frontmatter.sccp}: {frontmatter.title}{' '}
         <a href="#" className="inline-block">
           <SourceIcon />
         </a>
@@ -31,8 +32,8 @@ const Template: React.FC<Props> = ({ data }) => {
 export default Template
 
 export const pageQuery = graphql`
-  query sipPage($frontmatter__sip: Int) {
-    markdownRemark(frontmatter: { sip: { eq: $frontmatter__sip } }) {
+  query sccpPage($frontmatter__sccp: Int) {
+    markdownRemark(frontmatter: { sccp: { eq: $frontmatter__sccp } }) {
       frontmatter {
         ...Frontmatter
       }

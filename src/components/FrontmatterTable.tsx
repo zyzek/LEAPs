@@ -2,11 +2,11 @@ import React from 'react'
 import { format } from 'date-fns'
 import { graphql } from 'gatsby'
 
-import { SipFrontmatterFragment } from '../gql'
+import { FrontmatterFragment } from '../../types/gql'
 import { AuthorList } from './AuthorList'
 
 interface Props {
-  frontmatter: SipFrontmatterFragment
+  frontmatter: FrontmatterFragment
 }
 
 const FrontmatterTable: React.FC<Props> = ({ frontmatter }) => {
@@ -43,8 +43,9 @@ const FrontmatterTable: React.FC<Props> = ({ frontmatter }) => {
 }
 
 export const query = graphql`
-  fragment SipFrontmatter on MarkdownRemarkFrontmatter {
+  fragment Frontmatter on MarkdownRemarkFrontmatter {
     sip
+    sccp
     title
     author
     discussions_to

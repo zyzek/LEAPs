@@ -1,9 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { sortBy, filter, flow, reject } from 'lodash/fp'
+import { sortBy, filter, flow } from 'lodash/fp'
 
 import statuses from '../utils/statuses'
-import { AllSipsQuery } from '../gql'
+import { AllSipsQuery } from '../../types/gql'
 import Main from '../layout/Main'
 import { StatusTable } from '../components/StatusTable'
 import { StatusLabel } from '../components/StatusLabel'
@@ -27,10 +27,7 @@ const Template: React.FC<Props> = ({ data: { allMarkdownRemark } }) => {
       </header>
       <div className="post-content">
         {columns.map((g) => {
-          const rows = flow(
-            reject({ frontmatter: { sip: null } }),
-            sortBy('frontmatter.sip'),
-          )(g.nodes)
+          const rows = flow(sortBy('frontmatter.sip'))(g.nodes)
           return (
             <div key={g.fieldValue}>
               <StatusLabel label={g.fieldValue} />
@@ -47,16 +44,18 @@ export default Template
 
 export const pageQuery = graphql`
   query allSips {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/sips/" } }) {
+    allMarkdownRemark(
+      filter: {
+        fileAbsolutePath: { regex: "/sips/" }
+        frontmatter: { sip: { ne: null } }
+      }
+    ) {
       group(field: frontmatter___status) {
         fieldValue
         nodes {
           id
           frontmatter {
-            sip
-            title
-            created
-            author
+            ...Frontmatter
           }
         }
       }
