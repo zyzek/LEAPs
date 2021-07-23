@@ -11,6 +11,7 @@ const commonValidationSchema = Yup.object().shape({
   title: Yup.string().required(),
   status: Yup.string().oneOf(statuses),
   author: Yup.string().required(),
+  implementor: Yup.string().nullable(),
   created: Yup.date().nullable(),
   'discussions-to': Yup.string().nullable(),
 })
