@@ -41,7 +41,7 @@ const AuthorList: React.FC<Props> = ({ author }) => {
         }
         return (
           <span key={i}>
-            {i + 1 !== authors.length ? `${trim(author)}, ` : trim(author)}
+            {i + 1 !== authors.length ? `${trim(a)}, ` : trim(a)}
           </span>
         )
       })}
