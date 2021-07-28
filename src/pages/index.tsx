@@ -6,9 +6,7 @@ import Main from '../layout/Main'
 // markup
 const IndexPage = () => (
   <Main>
-    <Helmet>
-      <title>Synthetix Improvement Proposals</title>
-    </Helmet>
+    <Helmet title="Synthetix Improvement Proposals" />
     <h1 className="page-heading">
       Synthetix Improvement Proposals{' '}
       <a
