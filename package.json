@@ -41,6 +41,7 @@
     "yup": "^0.32.9"
   },
   "devDependencies": {
+    "@types/react-helmet": "^6.1.2",
     "@typescript-eslint/eslint-plugin": "^4.28.3",
     "@typescript-eslint/parser": "^4.28.3",
     "eslint": "^7.30.0",

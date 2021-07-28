@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import { Helmet } from 'react-helmet'
 
 import Main from '../../layout/Main'
 import FrontmatterTable from '../../components/FrontmatterTable'
@@ -17,6 +18,11 @@ const Template: React.FC<Props> = ({ data }) => {
   console.log(frontmatter)
   return (
     <Main>
+      <Helmet>
+        <title>
+          SCCP-{frontmatter.sccp}: {frontmatter.title}
+        </title>
+      </Helmet>
       <h1 className="page-heading">
         SCCP-{frontmatter.sccp}: {frontmatter.title}{' '}
         <a href="#" className="inline-block">

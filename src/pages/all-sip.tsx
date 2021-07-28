@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { sortBy, filter, flow } from 'lodash/fp'
+import { Helmet } from 'react-helmet'
 
 import statuses from '../../ci/statuses'
 import { AllSipsQuery } from '../../types/gql'
@@ -22,6 +23,9 @@ const Template: React.FC<Props> = ({ data: { allMarkdownRemark } }) => {
 
   return (
     <Main>
+      <Helmet>
+        <title>All SIPs</title>
+      </Helmet>
       <header className="post-header">
         <h1 className="post-title">All SIPs</h1>
       </header>

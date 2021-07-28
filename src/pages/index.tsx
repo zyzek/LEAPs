@@ -1,9 +1,14 @@
 import * as React from 'react'
+import { Helmet } from 'react-helmet'
+
 import Main from '../layout/Main'
 
 // markup
 const IndexPage = () => (
   <Main>
+    <Helmet>
+      <title>Synthetix Improvement Proposals</title>
+    </Helmet>
     <h1 className="page-heading">
       Synthetix Improvement Proposals{' '}
       <a
