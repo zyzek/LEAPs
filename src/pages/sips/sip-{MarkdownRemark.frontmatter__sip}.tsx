@@ -17,11 +17,7 @@ const Template: React.FC<Props> = ({ data }) => {
   const { frontmatter, html } = markdownRemark
   return (
     <Main>
-      <Helmet>
-        <title>
-          SIP-{frontmatter.sip}: {frontmatter.title}
-        </title>
-      </Helmet>
+      <Helmet title={`SIP-${frontmatter.sip}: ${frontmatter.title}`} />
       <h1 className="page-heading">
         SIP-{frontmatter.sip}: {frontmatter.title}{' '}
         <a href="#" className="inline-block">

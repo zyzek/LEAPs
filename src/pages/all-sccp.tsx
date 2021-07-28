@@ -23,9 +23,7 @@ const Template: React.FC<Props> = ({ data: { allMarkdownRemark } }) => {
 
   return (
     <Main>
-      <Helmet>
-        <title>All SCCPs</title>
-      </Helmet>
+      <Helmet title="All SCCPs" />
       <header className="post-header">
         <h1 className="post-title">All SCCPs</h1>
       </header>

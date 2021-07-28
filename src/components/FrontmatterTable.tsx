@@ -38,6 +38,12 @@ const FrontmatterTable: React.FC<Props> = ({ frontmatter }) => {
           <td>{format(new Date(frontmatter.created), 'yyyy-MM-dd')}</td>
         </tr>
       )}
+      {frontmatter.updated && (
+        <tr>
+          <th>Updated</th>
+          <td>{format(new Date(frontmatter.created), 'yyyy-MM-dd')}</td>
+        </tr>
+      )}
     </table>
   )
 }
@@ -50,6 +56,7 @@ export const query = graphql`
     author
     discussions_to
     created
+    updated
     status
   }
 `

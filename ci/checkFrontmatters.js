@@ -13,20 +13,28 @@ const commonValidationSchema = Yup.object().shape({
   author: Yup.string().required(),
   implementor: Yup.string().nullable(),
   created: Yup.date().nullable(),
+  updated: Yup.date().nullable(),
+  requires: Yup.mixed().nullable(),
   'discussions-to': Yup.string().nullable(),
 })
 
-const sipValidationSchema = commonValidationSchema.concat(
-  Yup.object().shape({
-    sip: Yup.number().required(),
-  }),
-)
+const sipValidationSchema = commonValidationSchema
+  .concat(
+    Yup.object().shape({
+      sip: Yup.number().required(),
+    }),
+  )
+  .noUnknown()
+  .strict()
 
-const sccpValidationSchema = commonValidationSchema.concat(
-  Yup.object().shape({
-    sccp: Yup.number().required(),
-  }),
-)
+const sccpValidationSchema = commonValidationSchema
+  .concat(
+    Yup.object().shape({
+      sccp: Yup.number().required(),
+    }),
+  )
+  .noUnknown()
+  .strict()
 
 ;(async () => {
   try {
