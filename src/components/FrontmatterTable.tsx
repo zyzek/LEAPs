@@ -40,7 +40,7 @@ const FrontmatterTable: React.FC<Props> = ({ frontmatter }) => {
       )}
       {frontmatter.updated && (
         <tr>
-          <th>Created</th>
+          <th>Updated</th>
           <td>{format(new Date(frontmatter.created), 'yyyy-MM-dd')}</td>
         </tr>
       )}
