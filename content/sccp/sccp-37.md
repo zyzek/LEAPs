@@ -4,7 +4,7 @@ title: Increase Fees on Silver to 50 bp
 author: Kaleb Keny (@kaleb-keny)
 status: Implemented
 discussions-to: <Governance-Channel>
-created: <2020-07-24>
+created: 2020-07-24
 ---
 
 ## Simple Summary
