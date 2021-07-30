@@ -4,6 +4,6 @@ module.exports = [
   'SC_Review_Pending',
   'Vote_Pending',
   'Approved',
-  'Rejected',
   'Implemented',
+  'Rejected',
 ]
