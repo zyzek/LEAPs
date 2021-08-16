@@ -5,7 +5,6 @@ status: Implemented
 author: Kain Warwick (@kaiynne)
 discussions-to: https://research.synthetix.io/
 created: 2019-06-10
-updated: N/A
 ---
 
 ## What is an SIP?

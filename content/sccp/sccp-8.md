@@ -4,7 +4,7 @@ title: Increase exchange fee back to 50 basis points
 author: Garth Travers (@garthtravers)
 discussions-to: https://discordapp.com/invite/AEdUHzt
 status: Implemented
-created: 2019-12/02
+created: 2019-12-02
 ---
 
 ## Simple Summary

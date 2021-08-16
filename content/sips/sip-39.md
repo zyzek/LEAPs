@@ -5,7 +5,6 @@ status: Implemented
 author: Garth Travers (@garthtravers)
 discussions-to: https://discordapp.com/invite/AEdUHzt
 created: 2020-01-30
-updated: N/A
 ---
 ## Simple Summary
 

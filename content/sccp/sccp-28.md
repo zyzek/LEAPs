@@ -4,7 +4,7 @@ title: Reduce Rewards On Curve - SNX 32,000
 status: Implemented
 author: Kaleb Keny (@kaleb-keny)
 discussions-to: https://discord.gg/B3PtpY
-created: <2020-06-29>
+created: 2020-06-29
 ---
 
 ## Simple Summary

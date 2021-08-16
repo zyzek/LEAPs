@@ -4,7 +4,7 @@ title: Increase Forex Fees
 author: Spreek (@Spreek)
 discussions-to: https://research.synthetix.io/t/sccp-increase-forex-fees/169
 status: Implemented
-created: <2020-08-01>
+created: 2020-08-01
 
 ---
 

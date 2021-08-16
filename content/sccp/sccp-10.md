@@ -4,7 +4,7 @@ title: Reduce minter reward for supply schedule
 author: Jackson Chan (@jacko125), Justin J Moses (@justinjmoses)
 status: Implemented
 
-created: 2020-01/23
+created: 2020-01-23
 ---
 
 ## Simple Summary

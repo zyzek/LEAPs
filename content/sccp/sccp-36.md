@@ -4,7 +4,7 @@ title: Increase Fees on Stock Synths 50 bp
 author: Kaleb Keny (@kaleb-keny)
 status: Implemented
 discussions-to: <https://research.synthetix.io/t/increase-fees-on-stock-synths-50-bp/103>
-created: <2020-07-18>
+created: 2020-07-18
 ---
 
 ## Simple Summary

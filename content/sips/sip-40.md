@@ -5,7 +5,6 @@ status: Implemented
 author: Kain Warwick (@kaiynne), Jackson Chan (@jacko125), Clinton Ennis (@hav-noms), Garth Travers (@garthtravers)
 discussions-to: https://discordapp.com/invite/AEdUHzt
 created: 2020-02-27
-updated: N/A
 ---
 ## Simple Summary
 
