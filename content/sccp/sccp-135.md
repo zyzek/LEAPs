@@ -1,7 +1,7 @@
 ---
 sccp: 135
 title: Initiate New Account Merging Window
-status: Vote Pending
+status: Vote_Pending
 discussions-to: governance
 author: Rafa (@rafanator) 
 created: 2021-08-13
