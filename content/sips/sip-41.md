@@ -5,11 +5,11 @@ status: Implemented
 author: Garth Travers (@garthtravers), Kain Warwick (@kaiynne)
 discussions-to: https://discordapp.com/invite/AEdUHzt
 created: 2020-02-28
+updated: N/A
 ---
-
 ## Simple Summary
 
-Proposal to move Synthetix contracts owner to a Gnosis multisig wallet.
+Proposal to move Synthetix contracts owner to a Gnosis multisig wallet. 
 
 ## Abstract
 
@@ -25,7 +25,7 @@ We will deploy a 3/5 multisig and transition contract ownership to this contract
 
 ## Rationale
 
-We chose the Gnosis Multisig as we have used it in several other implementations including the management of Uniswap staking rewards.
+We chose the Gnosis Multisig as we have used it in several other implementations including the management of Uniswap staking rewards. 
 
 ## Copyright
 

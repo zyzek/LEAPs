@@ -54,14 +54,12 @@ const IndexPage = () => (
       Your first PR should be a first draft of the final SIP. It must meet the
       formatting criteria enforced by the build (largely, correct metadata in
       the header). An editor will manually review the first PR for a new SIP and
-      assign it a number before merging it. Make sure you include a
-      <code>discussions-to</code> header with the URL to a discussion forum or
+      assign it a number before merging it. Make sure you include a <code>discussions-to</code> header with the URL to a discussion forum or
       open GitHub issue where people can discuss the SIP as a whole.
     </p>
     <p>
       If your SIP requires images, the image files should be included in a
-      subdirectory of the `assets` folder for that SIP as follow:
-      <code>sips/assets/sip-X</code> (for sip <b>X</b>). When linking to an
+      subdirectory of the `assets` folder for that SIP as follow: <code>sips/assets/sip-X</code> (for sip <b>X</b>). When linking to an
       image in the SIP, use relative links such as{' '}
       <code>../assets/sip-X/image.png</code>.
     </p>
