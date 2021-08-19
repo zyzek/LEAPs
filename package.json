@@ -1,9 +1,9 @@
 {
-  "name": "snx-sips",
+  "name": "lyra-lips",
   "version": "1.0.0",
   "private": true,
-  "description": "snx-sips",
-  "author": "SynthetixIo",
+  "description": "lyra-lips",
+  "author": "lyra-finance",
   "keywords": [
     "gatsby"
   ],

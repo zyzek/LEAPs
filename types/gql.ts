@@ -310,14 +310,12 @@ export type SitePage = Node & {
 
 export type SitePageContext = {
   id?: Maybe<Scalars['String']>;
-  frontmatter__sip?: Maybe<Scalars['Int']>;
+  frontmatter__lip?: Maybe<Scalars['Int']>;
   _xparams?: Maybe<SitePageContext_Xparams>;
-  frontmatter__sccp?: Maybe<Scalars['Int']>;
 };
 
 export type SitePageContext_Xparams = {
-  frontmatter__sip?: Maybe<Scalars['String']>;
-  frontmatter__sccp?: Maybe<Scalars['String']>;
+  frontmatter__lip?: Maybe<Scalars['String']>;
 };
 
 export type MarkdownHeading = {
@@ -397,25 +395,14 @@ export type MarkdownRemarkGatsbyPathArgs = {
 
 export type MarkdownRemarkFrontmatter = {
   title?: Maybe<Scalars['String']>;
-  sccp?: Maybe<Scalars['Int']>;
+  lip?: Maybe<Scalars['Int']>;
   status?: Maybe<Scalars['String']>;
-  discussions_to?: Maybe<Scalars['String']>;
   author?: Maybe<Scalars['String']>;
   created?: Maybe<Scalars['Date']>;
-  sip?: Maybe<Scalars['Int']>;
-  updated?: Maybe<Scalars['Date']>;
 };
 
 
 export type MarkdownRemarkFrontmatterCreatedArgs = {
-  formatString?: Maybe<Scalars['String']>;
-  fromNow?: Maybe<Scalars['Boolean']>;
-  difference?: Maybe<Scalars['String']>;
-  locale?: Maybe<Scalars['String']>;
-};
-
-
-export type MarkdownRemarkFrontmatterUpdatedArgs = {
   formatString?: Maybe<Scalars['String']>;
   fromNow?: Maybe<Scalars['Boolean']>;
   difference?: Maybe<Scalars['String']>;
@@ -846,13 +833,10 @@ export type MarkdownRemarkFilterInput = {
 
 export type MarkdownRemarkFrontmatterFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
-  sccp?: Maybe<IntQueryOperatorInput>;
+  lip?: Maybe<IntQueryOperatorInput>;
   status?: Maybe<StringQueryOperatorInput>;
-  discussions_to?: Maybe<StringQueryOperatorInput>;
   author?: Maybe<StringQueryOperatorInput>;
   created?: Maybe<DateQueryOperatorInput>;
-  sip?: Maybe<IntQueryOperatorInput>;
-  updated?: Maybe<DateQueryOperatorInput>;
 };
 
 export type JsonQueryOperatorInput = {
@@ -1002,13 +986,10 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark'
   | 'childrenMarkdownRemark___id'
   | 'childrenMarkdownRemark___frontmatter___title'
-  | 'childrenMarkdownRemark___frontmatter___sccp'
+  | 'childrenMarkdownRemark___frontmatter___lip'
   | 'childrenMarkdownRemark___frontmatter___status'
-  | 'childrenMarkdownRemark___frontmatter___discussions_to'
   | 'childrenMarkdownRemark___frontmatter___author'
   | 'childrenMarkdownRemark___frontmatter___created'
-  | 'childrenMarkdownRemark___frontmatter___sip'
-  | 'childrenMarkdownRemark___frontmatter___updated'
   | 'childrenMarkdownRemark___excerpt'
   | 'childrenMarkdownRemark___rawMarkdownBody'
   | 'childrenMarkdownRemark___fileAbsolutePath'
@@ -1064,13 +1045,10 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark___internal___type'
   | 'childMarkdownRemark___id'
   | 'childMarkdownRemark___frontmatter___title'
-  | 'childMarkdownRemark___frontmatter___sccp'
+  | 'childMarkdownRemark___frontmatter___lip'
   | 'childMarkdownRemark___frontmatter___status'
-  | 'childMarkdownRemark___frontmatter___discussions_to'
   | 'childMarkdownRemark___frontmatter___author'
   | 'childMarkdownRemark___frontmatter___created'
-  | 'childMarkdownRemark___frontmatter___sip'
-  | 'childMarkdownRemark___frontmatter___updated'
   | 'childMarkdownRemark___excerpt'
   | 'childMarkdownRemark___rawMarkdownBody'
   | 'childMarkdownRemark___fileAbsolutePath'
@@ -1932,14 +1910,12 @@ export type SitePluginPackageJsonPeerDependenciesFilterInput = {
 
 export type SitePageContextFilterInput = {
   id?: Maybe<StringQueryOperatorInput>;
-  frontmatter__sip?: Maybe<IntQueryOperatorInput>;
+  frontmatter__lip?: Maybe<IntQueryOperatorInput>;
   _xparams?: Maybe<SitePageContext_XparamsFilterInput>;
-  frontmatter__sccp?: Maybe<IntQueryOperatorInput>;
 };
 
 export type SitePageContext_XparamsFilterInput = {
-  frontmatter__sip?: Maybe<StringQueryOperatorInput>;
-  frontmatter__sccp?: Maybe<StringQueryOperatorInput>;
+  frontmatter__lip?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePageConnection = {
@@ -2166,10 +2142,8 @@ export type SitePageFieldsEnum =
   | 'internal___owner'
   | 'internal___type'
   | 'context___id'
-  | 'context___frontmatter__sip'
-  | 'context____xparams___frontmatter__sip'
-  | 'context____xparams___frontmatter__sccp'
-  | 'context___frontmatter__sccp';
+  | 'context___frontmatter__lip'
+  | 'context____xparams___frontmatter__lip';
 
 export type SitePageGroupConnection = {
   totalCount: Scalars['Int'];
@@ -2249,13 +2223,10 @@ export type MarkdownRemarkEdge = {
 export type MarkdownRemarkFieldsEnum =
   | 'id'
   | 'frontmatter___title'
-  | 'frontmatter___sccp'
+  | 'frontmatter___lip'
   | 'frontmatter___status'
-  | 'frontmatter___discussions_to'
   | 'frontmatter___author'
   | 'frontmatter___created'
-  | 'frontmatter___sip'
-  | 'frontmatter___updated'
   | 'excerpt'
   | 'rawMarkdownBody'
   | 'fileAbsolutePath'
@@ -2724,12 +2695,12 @@ export type SiteBuildMetadataSortInput = {
   order?: Maybe<Array<Maybe<SortOrderEnum>>>;
 };
 
-export type FrontmatterFragment = Pick<MarkdownRemarkFrontmatter, 'sip' | 'sccp' | 'title' | 'author' | 'discussions_to' | 'created' | 'updated' | 'status'>;
+export type FrontmatterFragment = Pick<MarkdownRemarkFrontmatter, 'lip' | 'title' | 'author' | 'created' | 'status'>;
 
-export type AllSccpQueryVariables = Exact<{ [key: string]: never; }>;
+export type AllLipsQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type AllSccpQuery = { allMarkdownRemark: { group: Array<(
+export type AllLipsQuery = { allMarkdownRemark: { group: Array<(
       Pick<MarkdownRemarkGroupConnection, 'fieldValue'>
       & { nodes: Array<(
         Pick<MarkdownRemark, 'id'>
@@ -2737,33 +2708,12 @@ export type AllSccpQuery = { allMarkdownRemark: { group: Array<(
       )> }
     )> } };
 
-export type AllSipsQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type AllSipsQuery = { allMarkdownRemark: { group: Array<(
-      Pick<MarkdownRemarkGroupConnection, 'fieldValue'>
-      & { nodes: Array<(
-        Pick<MarkdownRemark, 'id'>
-        & { frontmatter?: Maybe<FrontmatterFragment> }
-      )> }
-    )> } };
-
-export type SccpPageQueryVariables = Exact<{
-  frontmatter__sccp?: Maybe<Scalars['Int']>;
+export type LipPageQueryVariables = Exact<{
+  frontmatter__lip?: Maybe<Scalars['Int']>;
 }>;
 
 
-export type SccpPageQuery = { markdownRemark?: Maybe<(
-    Pick<MarkdownRemark, 'html'>
-    & { frontmatter?: Maybe<FrontmatterFragment> }
-  )> };
-
-export type SipPageQueryVariables = Exact<{
-  frontmatter__sip?: Maybe<Scalars['Int']>;
-}>;
-
-
-export type SipPageQuery = { markdownRemark?: Maybe<(
+export type LipPageQuery = { markdownRemark?: Maybe<(
     Pick<MarkdownRemark, 'html'>
     & { frontmatter?: Maybe<FrontmatterFragment> }
   )> };

@@ -1,44 +1,84 @@
-# SIPs [![Discord](https://img.shields.io/discord/413890591840272394.svg?color=768AD4&label=discord&logo=https%3A%2F%2Fdiscordapp.com%2Fassets%2F8c9701b98ad4372b58f13fd9f65f966e.svg)](https://discordapp.com/channels/413890591840272394/) [![Twitter Follow](https://img.shields.io/twitter/follow/synthetix_io.svg?label=synthetix_io&style=social)](https://twitter.com/synthetix_io)
+# Lyra Improvement Proposals (LIPs)
 
-Synthetix Improvement Proposals (SIPs) describe standards for the Synthetix platform, including core protocol specifications, client APIs, and contract standards.
-# Contributing
+Lyra Improvement Proposals (LIPs) describe standards for the Lyra protocol, including core protocol specifications, client APIs, and contract standards.
 
-1.  Review [SIP-1](sips/sip-1.md).
-2.  Fork the repository by clicking "Fork" in the top right.
-3.  Add your SIP to your fork of the repository. There is a [template SIP here](sip-x.md).
-4.  Submit a Pull Request to Synthetix's [SIPs repository](https://github.com/synthetixio/SIPs).
+**Before you initiate a pull request**, please read the [LIP-1](https://lips.lyra.finance/lips/LIP-1) process document. Ideas should be thoroughly discussed prior to opening a pull request.
 
-Your first PR should be a first draft of the final SIP. It must meet the formatting criteria enforced by the build (largely, correct metadata in the header). An editor will manually review the first PR for a new SIP and assign it a number before merging it. Make sure you include a `discussions-to` header with the URL to a new thread on [research.synthetix.io](https://research.synthetix.io) where people can discuss the SIP as a whole.
+This repository tracks the ongoing status of LIPs. It contains:
 
-If your SIP requires images, the image files should be included in a subdirectory of the `assets` folder for that SIP as follow: `assets/sip-X` (for sip **X**). When linking to an image in the SIP, use relative links such as `../assets/sip-X/image.png`.
+- [Draft](https://LIPs.Lyra.org/all#draft) proposals where the author(s) are still making changes and is not ready for review.
+- [Review ](https://LIPs.Lyra.org/all#review) for proposals ready for LIP review process and the author(s) are ready for improvement suggestions.
+- [Last Call](https://LIPs.Lyra.org/all#last-call) for proposals that may become final (see also [RSS feed](https://LIPs.Lyra.org/last-call.xml)).
+- [Accepted](https://LIPs.Lyra.org/all#accepted) proposals which are awaiting implementation or deployment by Lyra client developers.
+- [Final](https://LIPs.Lyra.org/all#final) and [Living](https://LIPs.Lyra.org/all#living) proposals that have solidified into a standard.
+- The [LIP process](./LIPS/LIP-1.md#LIP-work-flow) that governs the LIP repository.
 
-When you believe your SIP is mature and ready to progress past the Draft phase, you should reach out to a Spartan Council member on discord by searching members with the "Spartan Council" role or finding them within the #governance channel. The Spartan Council will schedule in a call with the SIP author to go through the SIP in more detail.
+Achieving "Final" status in this repository only represents that a proposal has been reviewed for technical accuracy. It is solely the responsibility of the reader to decide whether a proposal will be useful to them.
 
-Once assessed, a SIP is moved into `Feasibility` and a Core Contributor is assigned. The Core Contributor will work with the author to conduct a feasibility study. Once the Author and the Core Contributor are satisfied, a SIP is moved to `SC Review Pending`. Once the Spartan Council has formally reviewed the SIP during the SIP presentation they can either move it to a vote or send it back to `Feasability`. A vote is conducted within the `spartancouncil.eth` snapshot space connected on the [staking](https://staking.synthetix.io/) dApp. If a vote by the Spartan Council reaches a super majority, the SIP is moved to `Approved`, otherwise it is `Rejected`.
+Browse all current and draft LIPs on [the official LIP site](https://LIPs.Lyra.org/).
 
-Once the SIP has been implemented by either the protocol DAO or the SIP author and relevant parties, the SIP is assigned the `Implemented` status. There is a 500 sUSD bounty for proposing a SIP that reaches the `Implemented` phase.
+Once your first PR is merged, we have a bot that helps out by automatically merging PRs to draft LIPs. For this to work, it has to be able to tell that you own the draft being edited. Make sure that the 'author' line of your LIP contains either your GitHub username or your email address inside \<triangular brackets>. If you use your email address, that address must be the one publicly shown on [your GitHub profile](https://github.com/settings/profile).
 
-# SIP Statuses
+## Project Goal
 
-- **Draft** - The initial state of a new SIP before the Spartan Council and core contributors have assessed it.
-- **Feasibility** - a SIP that is being assessed for feasibility with an assigned Core Contributor
-- **SC_Review_Pending** - a SIP that is awaiting a Spartan Council Review after the Author and Core Contributor are satisfied with feasibility
-- **Vote_Pending** - a SIP that is awaiting a vote.
-- **Approved** - a SIP that has successfully reached a super majority Spartan Council vote in favour.
-- **Rejected** - a SIP that has failed to reach a super-majority Spartan Council vote in favour.
-- **Implemented** - a SIP that has been released to main-net.
+The Lyra Improvement Proposals repository exists as a place to share concrete proposals with potential users of the proposal and the Lyra community at large.
+
+## Preferred Citation Format
+
+The canonical URL for a LIP that has achieved draft status at any point is at https://LIPs.Lyra.org/. For example, the canonical URL for LIP-1 is https://LIPs.Lyra.org/LIPS/LIP-1.
+
+Please consider anything which is not published on https://LIPs.Lyra.org/ as a working paper.
+
+And please consider anything published at https://LIPs.Lyra.org/ with a status of "draft" as an incomplete draft.
 
 # Validation
 
-SIPs must pass some validation tests.
+LIPs must pass some validation tests.  The LIP repository ensures this by running tests using [html-proofer](https://rubygems.org/gems/html-proofer) and [LIP_validator](https://rubygems.org/gems/LIP_validator).
 
-It is possible to run the SIP validator locally:
-
-```
-npm install (if not done already)
-npm run test
+It is possible to run the LIP validator locally:
+```sh
+gem install LIP_validator
+LIP_validator <INPUT_FILES>
 ```
 
 # Automerger
 
-The SIP repository contains an "auto merge" feature to ease the workload for SIP editors. If a change is made via a PR to a draft SIP, then the authors of the SIP can Github approve the change to have it auto-merged by the [sip-automerger](https://github.com/bakaoh/sip_automerger) bot.
+The LIP repository contains an "auto merge" feature to ease the workload for LIP editors.  If a change is made via a PR to a draft LIP, then the authors of the LIP can GitHub approve the change to have it auto-merged by the [LIP-automerger](https://github.com/LIP-automerger/automerger) bot.
+
+# Local development
+
+## Prerequisites
+
+1. Open Terminal.
+
+2. Check whether you have Ruby 2.1.0 or higher installed:
+
+```sh
+$ ruby --version
+```
+
+3. If you don't have Ruby installed, install Ruby 2.1.0 or higher.
+
+4. Install Bundler:
+
+```sh
+$ gem install bundler
+```
+
+5. Install dependencies:
+
+```sh
+$ bundle install
+```
+
+## Build your local Jekyll site
+
+1. Bundle assets and start the server:
+
+```sh
+$ bundle exec jekyll serve
+```
+
+2. Preview your local Jekyll site in your web browser at `http://localhost:4000`.
+
+More information on Jekyll and GitHub pages [here](https://help.github.com/en/enterprise/2.14/user/articles/setting-up-your-github-pages-site-locally-with-jekyll).

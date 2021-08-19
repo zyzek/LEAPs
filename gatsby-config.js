@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://www.yourdomain.tld',
-    title: 'Synthetix SIPs & SCCPs',
+    title: 'Lyra LIPs',
   },
   plugins: [
     'gatsby-plugin-typescript',

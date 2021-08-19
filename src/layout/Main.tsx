@@ -10,7 +10,7 @@ const Main: React.FC = ({ children }) => {
       <header className="site-header" role="banner">
         <div className="wrapper">
           <Link className="site-title" rel="author" to="/">
-            SIPs
+            LIPs
           </Link>
           <nav className="site-nav">
             <input type="checkbox" id="nav-trigger" className="nav-trigger" />
@@ -23,11 +23,8 @@ const Main: React.FC = ({ children }) => {
             </label>
 
             <div className="trigger">
-              <Link className="page-link" to="/all-sip">
-                All SIPs
-              </Link>
-              <Link className="page-link" to="/all-sccp">
-                All SCCPs
+              <Link className="page-link" to="/all-lip">
+                All LIPs
               </Link>
             </div>
           </nav>
@@ -42,27 +39,27 @@ const Main: React.FC = ({ children }) => {
         <data className="u-url" href="/"></data>
 
         <div className="wrapper">
-          <h2 className="footer-heading">SIPs</h2>
+          <h2 className="footer-heading">LIPs</h2>
 
           <div className="footer-col-wrapper">
             <div className="footer-col footer-col-1">
               <ul className="contact-list">
-                <li className="p-name">SIPs</li>
+                <li className="p-name">LIPs</li>
               </ul>
             </div>
 
             <div className="footer-col footer-col-2">
               <ul className="social-media-list">
                 <li>
-                  <a href="https://github.com/Synthetixio/SIPs">
+                  <a href="https://github.com/lyra-finance/LIPs">
                     <GithubIcon className="svg-icon" />
-                    <span className="username">Synthetixio/SIPs</span>
+                    <span className="username">lyra-finance/LIPs</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/synthetix_io">
+                  <a href="https://twitter.com/lyrafinance">
                     <TwitterIcon className="svg-icon" />
-                    <span className="username">synthetix_io</span>
+                    <span className="username">lyrafinance</span>
                   </a>
                 </li>
               </ul>
@@ -70,8 +67,8 @@ const Main: React.FC = ({ children }) => {
 
             <div className="footer-col footer-col-3">
               <p>
-                Synthetix Improvement Proposals (SIPs) describe standards for
-                the Synthetix platform, including core protocol specifications,
+                Lyra Improvement Proposals (LIPs) describe standards for
+                the Lyra platform, including core protocol specifications,
                 client APIs, and contract standards.
               </p>
             </div>
