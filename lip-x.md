@@ -49,9 +49,9 @@ The technical specification should outline the public API of the changes propose
 <!--Test cases for an implementation are mandatory for LIPs but can be included with the implementation..-->
 Test cases for an implementation are mandatory for LIPs but can be included with the implementation.
 
-### Configurable Values (Via SCCP)
-<!--Please list all values configurable via SCCP under this implementation.-->
-Please list all values configurable via SCCP under this implementation.
+### Configurable Values
+<!--Please list all values configurable under this implementation.-->
+Please list all values configurable under this implementation.
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
