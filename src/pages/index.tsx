@@ -23,7 +23,7 @@ const IndexPage = () => (
     </h1>
     <p>
       Lyra Improvement Proposals (LIPs) describe standards for the
-      Lyra platform, including core protocol specifications, client APIs,
+      Lyra Protocol, including core protocol specifications, client APIs,
       and contract standards.
     </p>
 
