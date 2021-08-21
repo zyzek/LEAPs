@@ -1,84 +1,37 @@
-# Lyra Improvement Proposals (LIPs)
+Lyra Improvement Proposals (LIPs) describe standards for the Lyra Protocol, including core protocol specifications, client APIs, and contract standards.
 
-Lyra Improvement Proposals (LIPs) describe standards for the Lyra protocol, including core protocol specifications, client APIs, and contract standards.
+# Contributing
 
-**Before you initiate a pull request**, please read the [LIP-1](https://lips.lyra.finance/lips/LIP-1) process document. Ideas should be thoroughly discussed prior to opening a pull request.
+1.  Review [LIP-1](lips/lip-1.md).
+2.  Fork the repository by clicking "Fork" in the top right.
+3.  Add your SIP to your fork of the repository. There is a [template LIP here](lip-x.md).
+4.  Submit a Pull Request to Synthetix's [LIPs repository](https://github.com/lyra-finance/LIPs).
 
-This repository tracks the ongoing status of LIPs. It contains:
+Your first PR should be a first draft of the final LIP. It must meet the formatting criteria enforced by the build (largely, correct metadata in the header). An editor will manually review the first PR for a new LIP and assign it a number before merging it.
 
-- [Draft](https://LIPs.Lyra.org/all#draft) proposals where the author(s) are still making changes and is not ready for review.
-- [Review ](https://LIPs.Lyra.org/all#review) for proposals ready for LIP review process and the author(s) are ready for improvement suggestions.
-- [Last Call](https://LIPs.Lyra.org/all#last-call) for proposals that may become final (see also [RSS feed](https://LIPs.Lyra.org/last-call.xml)).
-- [Accepted](https://LIPs.Lyra.org/all#accepted) proposals which are awaiting implementation or deployment by Lyra client developers.
-- [Final](https://LIPs.Lyra.org/all#final) and [Living](https://LIPs.Lyra.org/all#living) proposals that have solidified into a standard.
-- The [LIP process](./LIPS/LIP-1.md#LIP-work-flow) that governs the LIP repository.
+If your LIP requires images, the image files should be included in a subdirectory of the `assets` folder for that LIP as follow: lips/assets/lip-X (for lip X). When linking to an image in the LIP, use relative links such as ../assets/lip-X/image.png.
 
-Achieving "Final" status in this repository only represents that a proposal has been reviewed for technical accuracy. It is solely the responsibility of the reader to decide whether a proposal will be useful to them.
+When you believe your LIP is ready to progress past the `Draft` phase, you should reach out to a Lyra Council member on Discord. The Lyra Council will schedule in a call with the LIP author to go through the LIP in more detail.
 
-Browse all current and draft LIPs on [the official LIP site](https://LIPs.Lyra.org/).
+Once assessed, a LIP is moved into `Proposed`. Once the Lyra Council has formally reviewed the LIP during the LIP presentation they can either move it to a vote or send it back to `Draft`. A vote is conducted within the Lyra discord. If a vote by the Lyra Council reaches a majority, the LIP is moved to `Approved`, otherwise it is `Rejected`.
 
-Once your first PR is merged, we have a bot that helps out by automatically merging PRs to draft LIPs. For this to work, it has to be able to tell that you own the draft being edited. Make sure that the 'author' line of your LIP contains either your GitHub username or your email address inside \<triangular brackets>. If you use your email address, that address must be the one publicly shown on [your GitHub profile](https://github.com/settings/profile).
+Once the LIP has been implemented the LIP is assigned the `Implemented` status.
 
-## Project Goal
+# SIP Statuses
 
-The Lyra Improvement Proposals repository exists as a place to share concrete proposals with potential users of the proposal and the Lyra community at large.
-
-## Preferred Citation Format
-
-The canonical URL for a LIP that has achieved draft status at any point is at https://LIPs.Lyra.org/. For example, the canonical URL for LIP-1 is https://LIPs.Lyra.org/LIPS/LIP-1.
-
-Please consider anything which is not published on https://LIPs.Lyra.org/ as a working paper.
-
-And please consider anything published at https://LIPs.Lyra.org/ with a status of "draft" as an incomplete draft.
+- **Draft** - The initial state of an LIP while it is still being actively developed.
+- **Proposed** - a SIP that is being assessed for feasibility with an assigned Core Contributor
+- **Approved** - a SIP that is awaiting a Spartan Council Review after the Author and Core Contributor are satisfied with feasibility
+- **Rejected** - a SIP that is awaiting a vote.
+- **Implemented** - a SIP that has successfully reached a super majority Spartan Council vote in favour.
 
 # Validation
 
-LIPs must pass some validation tests.  The LIP repository ensures this by running tests using [html-proofer](https://rubygems.org/gems/html-proofer) and [LIP_validator](https://rubygems.org/gems/LIP_validator).
+LIPs must pass some validation tests.
 
 It is possible to run the LIP validator locally:
-```sh
-gem install LIP_validator
-LIP_validator <INPUT_FILES>
+
 ```
-
-# Automerger
-
-The LIP repository contains an "auto merge" feature to ease the workload for LIP editors.  If a change is made via a PR to a draft LIP, then the authors of the LIP can GitHub approve the change to have it auto-merged by the [LIP-automerger](https://github.com/LIP-automerger/automerger) bot.
-
-# Local development
-
-## Prerequisites
-
-1. Open Terminal.
-
-2. Check whether you have Ruby 2.1.0 or higher installed:
-
-```sh
-$ ruby --version
+npm install (if not done already)
+npm run test
 ```
-
-3. If you don't have Ruby installed, install Ruby 2.1.0 or higher.
-
-4. Install Bundler:
-
-```sh
-$ gem install bundler
-```
-
-5. Install dependencies:
-
-```sh
-$ bundle install
-```
-
-## Build your local Jekyll site
-
-1. Bundle assets and start the server:
-
-```sh
-$ bundle exec jekyll serve
-```
-
-2. Preview your local Jekyll site in your web browser at `http://localhost:4000`.
-
-More information on Jekyll and GitHub pages [here](https://help.github.com/en/enterprise/2.14/user/articles/setting-up-your-github-pages-site-locally-with-jekyll).
