@@ -20,10 +20,10 @@ Once the LIP has been implemented the LIP is assigned the `Implemented` status.
 # SIP Statuses
 
 - **Draft** - The initial state of an LIP while it is still being actively developed.
-- **Proposed** - a SIP that is being assessed for feasibility with an assigned Core Contributor
-- **Approved** - a SIP that is awaiting a Spartan Council Review after the Author and Core Contributor are satisfied with feasibility
-- **Rejected** - a SIP that is awaiting a vote.
-- **Implemented** - a SIP that has successfully reached a super majority Spartan Council vote in favour.
+- **Proposed** - A LIP that is awaiting a vote.
+- **Approved** - A LIP that has successfully reached a majority Lyra Council vote in favour.
+- **Rejected** - A LIP that has failed to reach a majority Lyra Council vote in favour.
+- **Implemented** - A LIP that has been released to mainnet.
 
 # Validation
 
