@@ -114,7 +114,7 @@ The current LIP editors are
 
 ` * Michael Spain (@mjs-12)`
 
-` * Dominic Romanowski (@dom)`
+` * Dominic Romanowski (@DominicRomanowski)`
 
 ## LIP Editor Responsibilities
 
