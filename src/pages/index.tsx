@@ -85,7 +85,7 @@ const IndexPage = () => (
     <h2>LIP status terms</h2>
     <ul>
       <li>
-        <strong>Draft</strong> - The initial state of an LIP while it is still being actively developed.
+        <strong>Draft</strong> - The initial state of a LIP while it is still being actively developed.
       </li>
       <li>
         <strong>Proposed</strong> - a LIP that is awaiting a vote.
