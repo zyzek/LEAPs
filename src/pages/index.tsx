@@ -6,9 +6,9 @@ import Main from '../layout/Main'
 // markup
 const IndexPage = () => (
   <Main>
-    <Helmet title="Lyra Improvement Proposals" />
+    <Helmet title="Lyra Enhancement Action Proposals" />
     <h1 className="page-heading">
-      Lyra Improvement Proposals{' '}
+      Lyra Enhancement Action Proposals{' '}
       {/* <a
         href="https://discordapp.com/channels/413890591840272394/"
         rel="nofollow"
@@ -22,7 +22,7 @@ const IndexPage = () => (
       </a> */}
     </h1>
     <p>
-      Lyra Improvement Proposals (LIPs) describe standards for the
+      Lyra Enhancement Action Proposals (LEAPs) describe standards for the
       Lyra Protocol, including core protocol specifications, client APIs,
       and contract standards.
     </p>
@@ -30,76 +30,76 @@ const IndexPage = () => (
     <h2>Contributing</h2>
     <ol>
       <li>
-        Review <a href="/lips/lip-1">LIP-1</a>.
+        Review <a href="/leaps/leap-1">LEAP-1</a>.
       </li>
       <li>
-        Fork the repository by visiting the LIPs{' '}
-        <a href="https://github.com/lyra-finance/LIPs">repo</a> and pressing
+        Fork the repository by visiting the LEAPs{' '}
+        <a href="https://github.com/lyra-finance/LEAPs">repo</a> and pressing
         "Fork" in the top right.
       </li>
       <li>
-        Add your LIP to your fork of the repository. There is a{' '}
-        <a href="https://github.com/lyra-finance/LIPs/blob/master/lip-x.md">
-          template LIP here
+        Add your LEAP to your fork of the repository. There is a{' '}
+        <a href="https://github.com/lyra-finance/LEAPs/blob/master/leap-x.md">
+          template LEAP here
         </a>
         .
       </li>
       <li>
         Submit a Pull Request to Lyra's{' '}
-        <a href="https://github.com/lyra-finance/LIPs">LIPs repository</a>.
+        <a href="https://github.com/lyra-finance/LEAPs">LEAPs repository</a>.
       </li>
     </ol>
 
     <p>
-      Your first PR should be a first draft of the final LIP. It must meet the
+      Your first PR should be a first draft of the final LEAP. It must meet the
       formatting criteria enforced by the build (largely, correct metadata in
-      the header). An editor will manually review the first PR for a new LIP and
+      the header). An editor will manually review the first PR for a new LEAP and
       assign it a number before merging it.
     </p>
     <p>
-      If your LIP requires images, the image files should be included in a
-      subdirectory of the `assets` folder for that LIP as follow: <code>lips/assets/lip-X</code> (for lip <b>X</b>). When linking to an
-      image in the LIP, use relative links such as{' '}
-      <code>../assets/lip-X/image.png</code>.
+      If your LEAP requires images, the image files should be included in a
+      subdirectory of the `assets` folder for that LEAP as follow: <code>leaps/assets/LEAP-X</code> (for leap <b>X</b>). When linking to an
+      image in the LEAP, use relative links such as{' '}
+      <code>../assets/leap-X/image.png</code>.
     </p>
     <p>
-      When you believe your LIP is ready to progress past the{' '}
+      When you believe your LEAP is ready to progress past the{' '}
       <code>Draft</code> phase, you should reach out to a Lyra Council member on Discord. The Lyra Council will schedule in
-      a call with the LIP author to go through the LIP in more detail.
+      a call with the LEAP author to go through the LEAP in more detail.
     </p>
 
     <p>
-      Once assessed, a LIP is moved into <code>Proposed</code>. Once the
-      Lyra Council has formally reviewed the LIP during the LIP presentation
+      Once assessed, a LEAP is moved into <code>Proposed</code>. Once the
+      Lyra Council has formally reviewed the LEAP during the LEAP presentation
       they can either move it to a vote or send it back to{' '}
       <code>Draft</code>. A vote is conducted within the Lyra discord. If a vote by
-      the Lyra Council reaches a majority, the LIP is moved to{' '}
+      the Lyra Council reaches a majority, the LEAP is moved to{' '}
       <code>Approved</code>, otherwise it is <code>Rejected</code>.
     </p>
 
     <p>
-      Once the LIP has been implemented the LIP is assigned the{' '}
+      Once the LEAP has been implemented the LEAP is assigned the{' '}
       <code>Implemented</code> status.
     </p>
 
-    <h2>LIP status terms</h2>
+    <h2>LEAP status terms</h2>
     <ul>
       <li>
-        <strong>Draft</strong> - The initial state of a LIP while it is still being actively developed.
+        <strong>Draft</strong> - The initial state of a LEAP while it is still being actively developed.
       </li>
       <li>
-        <strong>Proposed</strong> - a LIP that is awaiting a vote.
+        <strong>Proposed</strong> - The LEAP is awaiting a vote.
       </li>
       <li>
-        <strong>Approved</strong> - a LIP that has successfully reached a
+        <strong>Approved</strong> - The LEAP has successfully reached a
         majority Lyra Council vote in favour.
       </li>
       <li>
-        <strong>Rejected</strong> - a LIP that has failed to reach a
+        <strong>Rejected</strong> - The LEAP has failed to reach a
         majority Lyra Council vote in favour.
       </li>
       <li>
-        <strong>Implemented</strong> - a LIP that has been released to mainnet.
+        <strong>Implemented</strong> - The LEAP has been released to mainnet.
       </li>
     </ul>
   </Main>

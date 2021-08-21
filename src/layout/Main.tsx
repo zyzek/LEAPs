@@ -10,7 +10,7 @@ const Main: React.FC = ({ children }) => {
       <header className="site-header" role="banner">
         <div className="wrapper">
           <Link className="site-title" rel="author" to="/">
-            LIPs
+            LEAPs
           </Link>
           <nav className="site-nav">
             <input type="checkbox" id="nav-trigger" className="nav-trigger" />
@@ -23,8 +23,8 @@ const Main: React.FC = ({ children }) => {
             </label>
 
             <div className="trigger">
-              <Link className="page-link" to="/all-lip">
-                All LIPs
+              <Link className="page-link" to="/all-leap">
+                All LEAPs
               </Link>
             </div>
           </nav>
@@ -39,21 +39,21 @@ const Main: React.FC = ({ children }) => {
         <data className="u-url" href="/"></data>
 
         <div className="wrapper">
-          <h2 className="footer-heading">LIPs</h2>
+          <h2 className="footer-heading">LEAPs</h2>
 
           <div className="footer-col-wrapper">
             <div className="footer-col footer-col-1">
               <ul className="contact-list">
-                <li className="p-name">LIPs</li>
+                <li className="p-name">LEAPs</li>
               </ul>
             </div>
 
             <div className="footer-col footer-col-2">
               <ul className="social-media-list">
                 <li>
-                  <a href="https://github.com/lyra-finance/LIPs">
+                  <a href="https://github.com/lyra-finance/LEAPs">
                     <GithubIcon className="svg-icon" />
-                    <span className="username">lyra-finance/LIPs</span>
+                    <span className="username">lyra-finance/LEAPs</span>
                   </a>
                 </li>
                 <li>
@@ -67,8 +67,8 @@ const Main: React.FC = ({ children }) => {
 
             <div className="footer-col footer-col-3">
               <p>
-                Lyra Improvement Proposals (LIPs) describe standards for
-                the Lyra platform, including core protocol specifications,
+                Lyra Enhancement Action Proposals (LEAPs) describe standards for
+                the Lyra Protocol, including core protocol specifications,
                 client APIs, and contract standards.
               </p>
             </div>

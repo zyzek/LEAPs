@@ -38,8 +38,8 @@ const sccpValidationSchema = commonValidationSchema
 
 ;(async () => {
   try {
-    const sips = await g('./content/sips/*.md')
-    const sccp = await g('./content/sccp/*.md')
+    const sips = await g('./content/leaps/*.md')
+    // const sccp = await g('./content/sccp/*.md')
 
     // SIP
     await Promise.all(
@@ -50,13 +50,13 @@ const sccpValidationSchema = commonValidationSchema
       }),
     )
     // SCCP
-    await Promise.all(
-      sccp.map(async (file) => {
-        const content = await fs.readFile(file, 'utf-8')
-        const { attributes } = fm(content)
-        return await sccpValidationSchema.validate({ file, ...attributes })
-      }),
-    )
+    // await Promise.all(
+    //   sccp.map(async (file) => {
+    //     const content = await fs.readFile(file, 'utf-8')
+    //     const { attributes } = fm(content)
+    //     return await sccpValidationSchema.validate({ file, ...attributes })
+    //   }),
+    // )
   } catch (error) {
     console.error({
       value: error.value,

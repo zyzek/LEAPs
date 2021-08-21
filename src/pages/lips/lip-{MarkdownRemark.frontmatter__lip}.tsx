@@ -5,11 +5,11 @@ import { Helmet } from 'react-helmet'
 import Main from '../../layout/Main'
 import FrontmatterTable from '../../components/FrontmatterTable'
 import SourceIcon from '../../icons/Source'
-import { LipPageQuery } from '../../../types/gql'
+import { LeapPageQuery } from '../../../types/gql'
 
 interface Props {
-  frontmatter__lip: number
-  data: LipPageQuery
+  frontmatter__leap: number
+  data: LeapPageQuery
 }
 
 const Template: React.FC<Props> = ({ data }) => {
@@ -17,9 +17,9 @@ const Template: React.FC<Props> = ({ data }) => {
   const { frontmatter, html } = markdownRemark
   return (
     <Main>
-      <Helmet title={`LIP-${frontmatter.lip}: ${frontmatter.title}`} />
+      <Helmet title={`LEAP-${frontmatter.leap}: ${frontmatter.title}`} />
       <h1 className="page-heading">
-        LIP-{frontmatter.lip}: {frontmatter.title}{' '}
+        LEAP-{frontmatter.leap}: {frontmatter.title}{' '}
         <a href="#" className="inline-block">
           <SourceIcon />
         </a>
@@ -33,8 +33,8 @@ const Template: React.FC<Props> = ({ data }) => {
 export default Template
 
 export const pageQuery = graphql`
-  query lipPage($frontmatter__lip: Int) {
-    markdownRemark(frontmatter: { lip: { eq: $frontmatter__lip } }) {
+  query leapPage($frontmatter__leap: Int) {
+    markdownRemark(frontmatter: { leap: { eq: $frontmatter__leap } }) {
       frontmatter {
         ...Frontmatter
       }

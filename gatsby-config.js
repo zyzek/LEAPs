@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://www.yourdomain.tld',
-    title: 'Lyra LIPs',
+    title: 'Lyra LEAPs',
   },
   plugins: [
     'gatsby-plugin-typescript',

@@ -305,17 +305,6 @@ export type SitePage = Node & {
   parent?: Maybe<Node>;
   children: Array<Node>;
   internal: Internal;
-  context?: Maybe<SitePageContext>;
-};
-
-export type SitePageContext = {
-  id?: Maybe<Scalars['String']>;
-  frontmatter__lip?: Maybe<Scalars['Int']>;
-  _xparams?: Maybe<SitePageContext_Xparams>;
-};
-
-export type SitePageContext_Xparams = {
-  frontmatter__lip?: Maybe<Scalars['String']>;
 };
 
 export type MarkdownHeading = {
@@ -395,7 +384,7 @@ export type MarkdownRemarkGatsbyPathArgs = {
 
 export type MarkdownRemarkFrontmatter = {
   title?: Maybe<Scalars['String']>;
-  lip?: Maybe<Scalars['Int']>;
+  leap?: Maybe<Scalars['Int']>;
   status?: Maybe<Scalars['String']>;
   author?: Maybe<Scalars['String']>;
   created?: Maybe<Scalars['Date']>;
@@ -685,7 +674,6 @@ export type QuerySitePageArgs = {
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
   internal?: Maybe<InternalFilterInput>;
-  context?: Maybe<SitePageContextFilterInput>;
 };
 
 
@@ -833,7 +821,7 @@ export type MarkdownRemarkFilterInput = {
 
 export type MarkdownRemarkFrontmatterFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
-  lip?: Maybe<IntQueryOperatorInput>;
+  leap?: Maybe<IntQueryOperatorInput>;
   status?: Maybe<StringQueryOperatorInput>;
   author?: Maybe<StringQueryOperatorInput>;
   created?: Maybe<DateQueryOperatorInput>;
@@ -986,7 +974,7 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark'
   | 'childrenMarkdownRemark___id'
   | 'childrenMarkdownRemark___frontmatter___title'
-  | 'childrenMarkdownRemark___frontmatter___lip'
+  | 'childrenMarkdownRemark___frontmatter___leap'
   | 'childrenMarkdownRemark___frontmatter___status'
   | 'childrenMarkdownRemark___frontmatter___author'
   | 'childrenMarkdownRemark___frontmatter___created'
@@ -1045,7 +1033,7 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark___internal___type'
   | 'childMarkdownRemark___id'
   | 'childMarkdownRemark___frontmatter___title'
-  | 'childMarkdownRemark___frontmatter___lip'
+  | 'childMarkdownRemark___frontmatter___leap'
   | 'childMarkdownRemark___frontmatter___status'
   | 'childMarkdownRemark___frontmatter___author'
   | 'childMarkdownRemark___frontmatter___created'
@@ -1908,16 +1896,6 @@ export type SitePluginPackageJsonPeerDependenciesFilterInput = {
   version?: Maybe<StringQueryOperatorInput>;
 };
 
-export type SitePageContextFilterInput = {
-  id?: Maybe<StringQueryOperatorInput>;
-  frontmatter__lip?: Maybe<IntQueryOperatorInput>;
-  _xparams?: Maybe<SitePageContext_XparamsFilterInput>;
-};
-
-export type SitePageContext_XparamsFilterInput = {
-  frontmatter__lip?: Maybe<StringQueryOperatorInput>;
-};
-
 export type SitePageConnection = {
   totalCount: Scalars['Int'];
   edges: Array<SitePageEdge>;
@@ -2140,10 +2118,7 @@ export type SitePageFieldsEnum =
   | 'internal___ignoreType'
   | 'internal___mediaType'
   | 'internal___owner'
-  | 'internal___type'
-  | 'context___id'
-  | 'context___frontmatter__lip'
-  | 'context____xparams___frontmatter__lip';
+  | 'internal___type';
 
 export type SitePageGroupConnection = {
   totalCount: Scalars['Int'];
@@ -2167,7 +2142,6 @@ export type SitePageFilterInput = {
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
   internal?: Maybe<InternalFilterInput>;
-  context?: Maybe<SitePageContextFilterInput>;
 };
 
 export type SitePageSortInput = {
@@ -2223,7 +2197,7 @@ export type MarkdownRemarkEdge = {
 export type MarkdownRemarkFieldsEnum =
   | 'id'
   | 'frontmatter___title'
-  | 'frontmatter___lip'
+  | 'frontmatter___leap'
   | 'frontmatter___status'
   | 'frontmatter___author'
   | 'frontmatter___created'
@@ -2695,12 +2669,12 @@ export type SiteBuildMetadataSortInput = {
   order?: Maybe<Array<Maybe<SortOrderEnum>>>;
 };
 
-export type FrontmatterFragment = Pick<MarkdownRemarkFrontmatter, 'lip' | 'title' | 'author' | 'created' | 'status'>;
+export type FrontmatterFragment = Pick<MarkdownRemarkFrontmatter, 'leap' | 'title' | 'author' | 'created' | 'status'>;
 
-export type AllLipsQueryVariables = Exact<{ [key: string]: never; }>;
+export type AllLeapsQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type AllLipsQuery = { allMarkdownRemark: { group: Array<(
+export type AllLeapsQuery = { allMarkdownRemark: { group: Array<(
       Pick<MarkdownRemarkGroupConnection, 'fieldValue'>
       & { nodes: Array<(
         Pick<MarkdownRemark, 'id'>
@@ -2708,12 +2682,12 @@ export type AllLipsQuery = { allMarkdownRemark: { group: Array<(
       )> }
     )> } };
 
-export type LipPageQueryVariables = Exact<{
-  frontmatter__lip?: Maybe<Scalars['Int']>;
+export type LeapPageQueryVariables = Exact<{
+  frontmatter__leap?: Maybe<Scalars['Int']>;
 }>;
 
 
-export type LipPageQuery = { markdownRemark?: Maybe<(
+export type LeapPageQuery = { markdownRemark?: Maybe<(
     Pick<MarkdownRemark, 'html'>
     & { frontmatter?: Maybe<FrontmatterFragment> }
   )> };
