@@ -305,6 +305,17 @@ export type SitePage = Node & {
   parent?: Maybe<Node>;
   children: Array<Node>;
   internal: Internal;
+  context?: Maybe<SitePageContext>;
+};
+
+export type SitePageContext = {
+  id?: Maybe<Scalars['String']>;
+  frontmatter__leap?: Maybe<Scalars['Int']>;
+  _xparams?: Maybe<SitePageContext_Xparams>;
+};
+
+export type SitePageContext_Xparams = {
+  frontmatter__leap?: Maybe<Scalars['String']>;
 };
 
 export type MarkdownHeading = {
@@ -674,6 +685,7 @@ export type QuerySitePageArgs = {
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
   internal?: Maybe<InternalFilterInput>;
+  context?: Maybe<SitePageContextFilterInput>;
 };
 
 
@@ -1896,6 +1908,16 @@ export type SitePluginPackageJsonPeerDependenciesFilterInput = {
   version?: Maybe<StringQueryOperatorInput>;
 };
 
+export type SitePageContextFilterInput = {
+  id?: Maybe<StringQueryOperatorInput>;
+  frontmatter__leap?: Maybe<IntQueryOperatorInput>;
+  _xparams?: Maybe<SitePageContext_XparamsFilterInput>;
+};
+
+export type SitePageContext_XparamsFilterInput = {
+  frontmatter__leap?: Maybe<StringQueryOperatorInput>;
+};
+
 export type SitePageConnection = {
   totalCount: Scalars['Int'];
   edges: Array<SitePageEdge>;
@@ -2118,7 +2140,10 @@ export type SitePageFieldsEnum =
   | 'internal___ignoreType'
   | 'internal___mediaType'
   | 'internal___owner'
-  | 'internal___type';
+  | 'internal___type'
+  | 'context___id'
+  | 'context___frontmatter__leap'
+  | 'context____xparams___frontmatter__leap';
 
 export type SitePageGroupConnection = {
   totalCount: Scalars['Int'];
@@ -2142,6 +2167,7 @@ export type SitePageFilterInput = {
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
   internal?: Maybe<InternalFilterInput>;
+  context?: Maybe<SitePageContextFilterInput>;
 };
 
 export type SitePageSortInput = {
