@@ -1,7 +1,7 @@
 ---
 leap: 1
 title: LEAP Purpose and Guidelines
-status: Proposed
+status: Implemented
 author: Michael Spain (@mjs-12)
 created: 2021-08-17
 ---
