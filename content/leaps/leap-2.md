@@ -1,6 +1,6 @@
 ---
 leap: 2
-title: Launch Ethereum Market on Optimistic Ethereum
+title: Launch ETH Market on Optimistic Ethereum
 status: Proposed
 author: Michael Spain (@mjs-12)
 created: 2021-08-23
@@ -10,24 +10,22 @@ created: 2021-08-23
 
 ## Simple Summary
 <!--"If you can't explain it simply, you don't understand it well enough." Simply describe the outcome the proposed changes intends to achieve. This should be non-technical and accessible to a casual community member.-->
-Launch the Ethereum market on the Optimistic Ethereum mainnet.
+Launch the ETH market on the Optimistic Ethereum mainnet.
 
 ## Abstract
 <!--A short (~200 word) description of the proposed change, the abstract should clearly describe the proposed change. This is what *will* be done if the LEAP is implemented, not *why* it should be done or *how* it will be done. If the LEAP proposes deploying a new contract, write, "we propose to deploy a new contract that will do x".-->
 
-This LEAP proposes launching the Ethereum market on the Optimistic Ethereum (OΞ) mainnet. It also proposes beginning a two week liquidity round, with 500k sUSD provided by the LyraDAO. There will be a 14 day and 7 day expiry each with 7 strikes available to trade.
-
-The market will not be delta hedged as Synthetix shorting is not live on OΞ.
+This LEAP proposes launching the ETH market on the Optimistic Ethereum (OΞ) mainnet. A two week liquidity round will be initiated, with 500k sUSD provided by the LyraDAO. Two boards will be created, expiring on the 1st of September and the 8th of September (both at midnight UTC time). Each board will have seven strikes listed.
 
 ## Motivation
 <!--This is the problem statement. This is the *why* of the LEAP. It should clearly explain *why* the current state of the protocol is inadequate.  It is critical that you explain *why* the change is needed, if the LEAP proposes changing how something is calculated, you must address *why* the current calculation is innaccurate or wrong. This is not the place to describe how the LEAP will address the issue!-->
-Lyra has been designed for OΞ. It goes without saying that deploying on OΞ mainnet is an essential step for the project. In order to deploy, projects need to be whitelisted. There are several criteria that need to be satisfied:
+Lyra has been designed for OΞ. It goes without saying that deploying on OΞ mainnet is an essential step for the project. In order to deploy, projects need to be whitelisted, which requires several milestones being reached:
 
 - [Testnet](https://blog.lyra.finance/lyra-testnet/)
 - [Open source](https://github.com/lyra-finance/lyra-protocol)
 - [Audits](https://github.com/lyra-finance/lyra-protocol/tree/master/audits)
 
-Recently, the core team received clearance from the Optimism team to deploy. This LEAP will describe the process by which the Ethereum market will be launched.
+As a result of this work, the core team has received clearance from Optimism to deploy.
 
 ## Specification
 <!--The specification should describe the syntax and semantics of any new feature, there are five sections
@@ -40,11 +38,11 @@ Recently, the core team received clearance from the Optimism team to deploy. Thi
 
 ### Overview
 <!--This is a high level overview of *how* the LEAP will solve the problem. The overview should clearly describe how the new feature will be implemented.-->
-The work required to implement v1 of the Lyra Protocol has been completed and is viewable [here](https://github.com/lyra-finance/lyra-protocol). This LEAP describes the process of deploying the relevant smart contracts, adding liquidity and creating the listings.
+The work required to implement v1 of the Lyra Protocol has been completed and is viewable [here](https://github.com/lyra-finance/lyra-protocol). This section describes the process of deploying the relevant smart contracts, adding liquidity and creating the listings.
 
 ### Rationale
 <!--This is where you explain the reasoning behind how you propose to solve the problem. Why did you propose to implement the change in this way, what were the considerations and trade-offs. The rationale fleshes out what motivated the design and why particular design decisions were made. It should describe alternate designs that were considered and related work. The rationale may also provide evidence of consensus within the community, and should discuss important objections or concerns raised during discussion.-->
-This LEAP proposes launching only the Ethereum market, to allow for close monitoring of the performance of the mechanism, contracts and parameters. Adding additional markets will be addressed in separate LEAPs, as confidence is built in the system.
+This LEAP proposes launching only the ETH market, to allow for close monitoring of the mechanism, contracts and parameters. Adding additional markets will be addressed in separate LEAPs, as confidence is built in the system. Importantly, there will be no delta hedging as Synthetix shorting is not live on OΞ. The progress on shorting can be tracked in [SIP-135](https://sips.synthetix.io/sips/sip-135).
 
 ### Technical Specification
 <!--The technical specification should outline the public API of the changes proposed. That is, changes to any of the interfaces Lyra currently exposes or the creations of new ones.-->
@@ -58,7 +56,7 @@ BlackScholes.sol
 LyraGlobal.sol
 ```
 
-Then deploy the following contracts for the Ethereum market:
+Then deploy the following contracts for the ETH market:
 ```
 LiquidityPool.sol
 LiquidityCertificate.sol
@@ -71,7 +69,6 @@ PoolHedger.sol
 ```
 
 Descriptions of these contracts can be found [here](https://docs.lyra.finance/implementation/lyra-protocol-architecture).
-
 
 #### 2. Deposit Liquidity
 
@@ -99,22 +96,22 @@ skews=
 
 ### Test Cases
 <!--Test cases for an implementation are mandatory for LEAPs but can be included with the implementation..-->
-Test cases are included with the implementation and are available [here](https://github.com/lyra-finance/lyra-protocol)
+Test cases are included with the implementation and are available [here](https://github.com/lyra-finance/lyra-protocol/tree/master/test)
 
 ### Configurable Values
 <!--Please list all values configurable under this implementation.-->
-The following values are configurable for the Ethereum market. The core team has proposed the initial configuration.
+The following values are configurable for the ETH market. The core team has chosen the initial configuration.
 
 ```
 optionPriceFeeCoefficient = 0.015
 spotPriceFeeCoefficient = 0.004
 vegaFeeCoefficient = 400
 vegaNormFactor = 0.2
-standardSize = 0.5
+standardSize = 0.1
 skewAdjustmentFactor = 0.0125
-rateAndCarry = 0
+rateAndCarry = 0.09
 minDelta = 0.15
-volatilityCutoff = 0.60
+volatilityCutoff = 0.55
 tradingCutoff = 86400
 quoteKey = sUSD
 baseKey = sETH
