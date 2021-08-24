@@ -79,9 +79,9 @@ Add 500,000 sUSD to the `LiquidityPool` from Lyra's L2 DAO wallet.
 Add the following OptionBoard, expiring 14 days from launch:
 ```
 expiry=1631059200
-baseIv=
-strikes=
-skews=
+baseIv=0.92
+strikes=[2700,2900,3100,3200,3400,3600,3800]
+skews=[1.04,1,1,1,1,1.02,1.02]
 ```
 
 This will set `OptionMarket.maxExpiryTimestamp == 1631059200` and initiate a two week round in which liquidity cannot enter or exit.
@@ -89,9 +89,9 @@ This will set `OptionMarket.maxExpiryTimestamp == 1631059200` and initiate a two
 Add the following OptionBoard, expiring 7 days from launch:
 ```
 expiry=1630454400
-baseIv=
-strikes=
-skews=
+baseIv=0.95
+strikes=[2800,3000,3100,3200,3300,3400,3600]
+skews=[1.04,1,1,1,1,1.02,1.02]
 ```
 
 ### Test Cases
