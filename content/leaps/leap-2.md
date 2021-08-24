@@ -40,7 +40,7 @@ Recently, the core team received clearance from the Optimism team to deploy. Thi
 
 ### Overview
 <!--This is a high level overview of *how* the LEAP will solve the problem. The overview should clearly describe how the new feature will be implemented.-->
-The work required to implement v1 of the Lyra Protocol has been completed and is viewable [here](https://github.com/lyra-finance/lyra-protocol). This LEAP decsribes the process of deploying the relevant smart contracts, adding liquidity and creating the listings.
+The work required to implement v1 of the Lyra Protocol has been completed and is viewable [here](https://github.com/lyra-finance/lyra-protocol). This LEAP describes the process of deploying the relevant smart contracts, adding liquidity and creating the listings.
 
 ### Rationale
 <!--This is where you explain the reasoning behind how you propose to solve the problem. Why did you propose to implement the change in this way, what were the considerations and trade-offs. The rationale fleshes out what motivated the design and why particular design decisions were made. It should describe alternate designs that were considered and related work. The rationale may also provide evidence of consensus within the community, and should discuss important objections or concerns raised during discussion.-->
