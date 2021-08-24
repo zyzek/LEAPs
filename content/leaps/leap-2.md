@@ -65,6 +65,7 @@ LiquidityCertificate.sol
 OptionMarket.sol
 OptionMarketPricer.sol
 OptionGreekCache.sol
+OptionToken.sol
 ShortCollateral.sol
 PoolHedger.sol
 ```
@@ -114,6 +115,7 @@ skewAdjustmentFactor = 0.0125
 rateAndCarry = 0
 minDelta = 0.15
 volatilityCutoff = 0.60
+tradingCutoff = 86400
 quoteKey = sUSD
 baseKey = sETH
 ```
