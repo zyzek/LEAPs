@@ -1,6 +1,6 @@
 ---
 leap: 2
-title: Deploy ETH Market to Optimism Mainnet
+title: Launch Ethereum Market on Optimistic Ethereum
 status: Proposed
 author: Michael Spain (@mjs-12)
 created: 2021-08-23
@@ -10,24 +10,24 @@ created: 2021-08-23
 
 ## Simple Summary
 <!--"If you can't explain it simply, you don't understand it well enough." Simply describe the outcome the proposed changes intends to achieve. This should be non-technical and accessible to a casual community member.-->
-Deploy the Ethereum market to Optimism Mainnet.
+Launch the Ethereum market on the Optimistic Ethereum mainnet.
 
 ## Abstract
 <!--A short (~200 word) description of the proposed change, the abstract should clearly describe the proposed change. This is what *will* be done if the LEAP is implemented, not *why* it should be done or *how* it will be done. If the LEAP proposes deploying a new contract, write, "we propose to deploy a new contract that will do x".-->
 
-This LEAP proposes deploying the Lyra Protocol to Optimism Mainnet, with all the contracts needed to support an Ethereum Option Market. Two expiries will be added, 14 days and 7 days. The LyraDAO will provide $1M sUSD as liquidity for the first round.
+This LEAP proposes launching the Ethereum market on the Optimistic Ethereum (OΞ) mainnet. It also proposes beginning a two week liquidity round, with 500k sUSD provided by the LyraDAO. There will be a 14 day and 7 day expiry each with 7 strikes available to trade.
 
-This market will not be delta hedged. Synthetix needs to deploy the shorting mechanism before delta hedging can be enabled.
+The market will not be delta hedged as Synthetix shorting is not live on OΞ.
 
 ## Motivation
 <!--This is the problem statement. This is the *why* of the LEAP. It should clearly explain *why* the current state of the protocol is inadequate.  It is critical that you explain *why* the change is needed, if the LEAP proposes changing how something is calculated, you must address *why* the current calculation is innaccurate or wrong. This is not the place to describe how the LEAP will address the issue!-->
-Lyra has been designed for Optimism. It goes without saying that deploying to Optimism Mainnet is a crucial step forward for the project. Currently, deploying to mainnet requires being whitelisted. There are several important critera that need to be satisfied:
+Lyra has been designed for OΞ. It goes without saying that deploying on OΞ mainnet is an essential step for the project. In order to deploy, projects need to be whitelisted. There are several criteria that need to be satisfied:
 
 - [Testnet](https://blog.lyra.finance/lyra-testnet/)
 - [Open source](https://github.com/lyra-finance/lyra-protocol)
 - [Audits](https://github.com/lyra-finance/lyra-protocol/tree/master/audits)
 
-Recently, the core team received clearance from Optimism to deploy to mainnet. Now that we have clearance, this LEAP will describe the process by which the protocol will be deployed.
+Recently, the core team received clearance from the Optimism team to deploy. This LEAP will describe the process by which the Ethereum market will be launched.
 
 ## Specification
 <!--The specification should describe the syntax and semantics of any new feature, there are five sections
@@ -40,15 +40,15 @@ Recently, the core team received clearance from Optimism to deploy to mainnet. N
 
 ### Overview
 <!--This is a high level overview of *how* the LEAP will solve the problem. The overview should clearly describe how the new feature will be implemented.-->
-The work required to implement v1 of the Lyra Protocol has been completed and is viewable [here](https://github.com/lyra-finance/lyra-protocol). This LEAP decsribes the process of deploying the relevant smart contracts needed for an Ethereum Market.
+The work required to implement v1 of the Lyra Protocol has been completed and is viewable [here](https://github.com/lyra-finance/lyra-protocol). This LEAP decsribes the process of deploying the relevant smart contracts, adding liquidity and creating the listings.
 
 ### Rationale
 <!--This is where you explain the reasoning behind how you propose to solve the problem. Why did you propose to implement the change in this way, what were the considerations and trade-offs. The rationale fleshes out what motivated the design and why particular design decisions were made. It should describe alternate designs that were considered and related work. The rationale may also provide evidence of consensus within the community, and should discuss important objections or concerns raised during discussion.-->
-This LEAP proposes launching only the Ethereum market, to allow for close monitoring of the performance of the mechanism, contracts and parameters.
+This LEAP proposes launching only the Ethereum market, to allow for close monitoring of the performance of the mechanism, contracts and parameters. Adding additional markets will be addressed in separate LEAPs, as confidence is built in the system.
 
 ### Technical Specification
 <!--The technical specification should outline the public API of the changes proposed. That is, changes to any of the interfaces Lyra currently exposes or the creations of new ones.-->
-There are two steps required, deploying the smart contracts and creating the listings.
+There are three steps required, deploying the smart contracts, adding liquidity and creating the listings.
 
 #### 1. Deploy Smart Contracts
 
@@ -58,7 +58,7 @@ BlackScholes.sol
 LyraGlobal.sol
 ```
 
-These contracts only need to be deployed once and will be reused by subsequent markets. Then deploy the following contracts for the Ethereum Market:
+Then deploy the following contracts for the Ethereum market:
 ```
 LiquidityPool.sol
 LiquidityCertificate.sol
@@ -71,19 +71,26 @@ PoolHedger.sol
 
 Descriptions of these contracts can be found [here](https://docs.lyra.finance/implementation/lyra-protocol-architecture).
 
-#### 2. Add Options
+
+#### 2. Deposit Liquidity
+
+Add 500,000 sUSD to the `LiquidityPool` from Lyra's L2 DAO wallet.
+
+#### 3. Add Options
 
 Add the following OptionBoard, expiring 14 days from launch:
 ```
-expiry=
+expiry=1631059200
 baseIv=
 strikes=
 skews=
 ```
 
+This will set `OptionMarket.maxExpiryTimestamp == 1631059200` and initiate a two week round in which liquidity cannot enter or exit.
+
 Add the following OptionBoard, expiring 7 days from launch:
 ```
-expiry=
+expiry=1630454400
 baseIv=
 strikes=
 skews=
@@ -95,7 +102,7 @@ Test cases are included with the implementation and are available [here](https:/
 
 ### Configurable Values
 <!--Please list all values configurable under this implementation.-->
-The following values are configurable for the Ethereum Option Market. The core team has proposed the initial configuration.
+The following values are configurable for the Ethereum market. The core team has proposed the initial configuration.
 
 ```
 optionPriceFeeCoefficient = 0.015
