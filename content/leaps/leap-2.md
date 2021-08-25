@@ -1,7 +1,7 @@
 ---
 leap: 2
 title: Launch ETH Market on Optimistic Ethereum
-status: Proposed
+status: Implemented
 author: Michael Spain (@mjs-12)
 created: 2021-08-23
 ---
