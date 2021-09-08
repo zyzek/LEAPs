@@ -33,7 +33,7 @@ The tokens will be distributed at a date yet to be determined. This will likely 
 
 ## Motivation
 <!--This is the problem statement. This is the *why* of the LEAP. It should clearly explain *why* the current state of the protocol is inadequate.  It is critical that you explain *why* the change is needed, if the LEAP proposes changing how something is calculated, you must address *why* the current calculation is innaccurate or wrong. This is not the place to describe how the LEAP will address the issue!-->
-The first round finishedd succesfully but with only 500,000 sUSD in liquidity the trading experience is far from ideal. Due to the collateralisation requirements, it is only possible for the AMM to sell around 150 options. As such, slippage was set high, discouraging large trades. Traders have also struggled to acquire sUSD through Uniswap without incurring substantial slippage.
+The first round finished succesfully but with only 500,000 sUSD in liquidity the trading experience is far from ideal. Due to the collateralisation requirements, it is only possible for the AMM to sell around 150 options. As such, slippage was set high, discouraging large trades. Traders have also struggled to acquire sUSD through Uniswap without incurring substantial slippage.
 
 With only 8 million sUSD on OE, it is clear that we need to increase the sUSD supply. Our community is aligned with SNX here, who are currently pursuing three routes:
 - Divert inflation from L1 ([SCCP-1336](https://sips.synthetix.io/sccp/sccp-136))
