@@ -27,7 +27,7 @@ This LEAP proposes incentivising users to provide liquidity to the following poo
 
 Users who provide liquidity to either pool will receive LYRA tokens in proportion with their share of the total liquidity. Rewards will be determined using a script that is currently being developed and will be open-sourced on [Github](https://github.com/lyra-finance).
 
-The tokens will be distributed at a date yet to be determined. This will likely be at the initial token distribution, which is planned to occur in late October.
+The tokens will be distributed on a date yet to be determined. This will likely be around the initial token distribution, which is planned to occur in late October.
 
 ## Motivation
 <!--This is the problem statement. This is the *why* of the LEAP. It should clearly explain *why* the current state of the protocol is inadequate.  It is critical that you explain *why* the change is needed, if the LEAP proposes changing how something is calculated, you must address *why* the current calculation is innaccurate or wrong. This is not the place to describe how the LEAP will address the issue!-->
