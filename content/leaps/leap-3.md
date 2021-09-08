@@ -1,9 +1,9 @@
 ---
 leap: 3
-title: Incentivise Uniswap sUSD / ETH and Lyra ETH pools
+title: Incentivise Uniswap sUSD / ETH and Lyra ETH pool
 status: Proposed
 author: Michael Spain (@mjs-12)
-created: 2021-08-23
+created: 2021-09-8
 ---
 
 <!--You can leave these HTML comments in your merged LEAP and delete the visible duplicate text guides, they will not appear and may be helpful to refer to if you edit it again. This is the suggested template for new LEAPs. Note that a LEAP number will be assigned by an editor. When opening a pull request to submit your LEAP, please use an abbreviated title in the filename, `leap-draft_title_abbrev.md`. The title should be 44 characters or less.-->
@@ -25,9 +25,9 @@ This LEAP proposes incentivising users to provide liquidity to the following poo
 | [Uniswap sUSD / ETH](https://optimistic.etherscan.io/address/0xa194977b416f082f71a0362041b57208c91ee1c1) | 375,000 LYRA | Monday 13 September 00:00 UTC | Monday 27 September 00:00 UTC |
 | [Lyra ETH](https://optimistic.etherscan.io/address/0x7af4e1ce484f40d927b9c90fb6905df4376fc3f6)| 375,000 LYRA | Friday 17 September 09:00 UTC | Friday 1 October 09:00 UTC |
 
-Users who provide liquidity to either pool will receive LYRA tokens in proportion with their share of the total liquidity. Rewards will be determined using a script posted on [github](https://github.com/lyra-finance). The script is under active development and will be open sourced when ready.
+Users who provide liquidity to either pool will receive LYRA tokens in proportion with their share of the total liquidity. Rewards will be determined using a script that is currently being developed and will be open-sourced on [github](https://github.com/lyra-finance).
 
-The tokens will be distributed at a date yet to be determined. This will likely be at the initial token distribution, which is still being planned. For the sake of transparency, current estimates are that this will happen in late October.
+The tokens will be distributed at a date yet to be determined. This will likely be at the initial token distribution, which is planned to occur in mid to late October.
 
 ## Motivation
 <!--This is the problem statement. This is the *why* of the LEAP. It should clearly explain *why* the current state of the protocol is inadequate.  It is critical that you explain *why* the change is needed, if the LEAP proposes changing how something is calculated, you must address *why* the current calculation is innaccurate or wrong. This is not the place to describe how the LEAP will address the issue!-->
@@ -60,7 +60,7 @@ It is not easy to determine how many tokens to distribute without a market valua
 - What % of the sUSD supply goes to the Uniswap pool
 - What % of the sUSD supply goes to the Lyra ETH pool
 
-The Uniswap pool rewards begin before the Lyra ETH pool rewards. This is to allow the pool of available sUSD on OE to increase, enabling prospective Lyra LPs who are not SNX holders to swap ETH for sUSD in the Uniswap pool.
+This information will help inform future incentive programs. The Uniswap pool rewards begin before the Lyra ETH pool rewards to allow the pool of available sUSD on OΞ to increase, enabling prospective Lyra LPs who are not SNX holders to swap ETH for sUSD in the Uniswap pool.
 
 ### Technical Specification
 <!--The technical specification should outline the public API of the changes proposed. That is, changes to any of the interfaces Lyra currently exposes or the creations of new ones.-->

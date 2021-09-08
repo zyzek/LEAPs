@@ -398,15 +398,7 @@ export type MarkdownRemarkFrontmatter = {
   leap?: Maybe<Scalars['Int']>;
   status?: Maybe<Scalars['String']>;
   author?: Maybe<Scalars['String']>;
-  created?: Maybe<Scalars['Date']>;
-};
-
-
-export type MarkdownRemarkFrontmatterCreatedArgs = {
-  formatString?: Maybe<Scalars['String']>;
-  fromNow?: Maybe<Scalars['Boolean']>;
-  difference?: Maybe<Scalars['String']>;
-  locale?: Maybe<Scalars['String']>;
+  created?: Maybe<Scalars['String']>;
 };
 
 
@@ -836,7 +828,7 @@ export type MarkdownRemarkFrontmatterFilterInput = {
   leap?: Maybe<IntQueryOperatorInput>;
   status?: Maybe<StringQueryOperatorInput>;
   author?: Maybe<StringQueryOperatorInput>;
-  created?: Maybe<DateQueryOperatorInput>;
+  created?: Maybe<StringQueryOperatorInput>;
 };
 
 export type JsonQueryOperatorInput = {
