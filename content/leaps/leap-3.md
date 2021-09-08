@@ -57,7 +57,7 @@ Since the LYRA token is not live, it is not feasible to use the popular staking 
 
 ### Rationale
 <!--This is where you explain the reasoning behind how you propose to solve the problem. Why did you propose to implement the change in this way, what were the considerations and trade-offs. The rationale fleshes out what motivated the design and why particular design decisions were made. It should describe alternate designs that were considered and related work. The rationale may also provide evidence of consensus within the community, and should discuss important objections or concerns raised during discussion.-->
-It is difficult to determine how many tokens to distribute without a market valuation. It is also still relatively difficulty for stakers to move debt from L1  to L2. By running a two week trial, we can see how the market reacts and update future programs with this knowleddge.
+It is difficult to determine how many tokens to distribute without a market valuation. It is also still relatively difficulty for stakers to move debt from L1  to L2. By running a two week trial, we can see how the market reacts and update future programs with this knowledge.
 
 The Uniswap pool rewards begin before the ETH market rewards. This is to allow the pool of available sUSD on OE to increase, enabling prospective Lyra LPs who are not SNX holders to swap ETH for sUSD in the Uniswap pool.
 
