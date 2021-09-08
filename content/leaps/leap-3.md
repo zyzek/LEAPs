@@ -1,6 +1,6 @@
 ---
 leap: 3
-title: Incentivise Uniswap sUSD / ETH and Lyra ETH pool
+title: Incentivise Uniswap sUSD / ETH and Lyra ETH pools
 status: Proposed
 author: Michael Spain (@mjs-12)
 created: 2021-09-8
@@ -14,7 +14,7 @@ Distribute LYRA tokens to users who provide liquidity to the following pools:
 - [Uniswap sUSD / ETH](https://optimistic.etherscan.io/address/0xa194977b416f082f71a0362041b57208c91ee1c1)
 - [Lyra ETH](https://optimistic.etherscan.io/address/0x7af4e1ce484f40d927b9c90fb6905df4376fc3f6)
 
-This will be a trial program running from Monday 13 September to Friday 1 October. LYRA will be distributed when the token is officially launched.
+This will be a trial program running from Monday 13 September to Friday 1 October. The rewards will be distributed when LYRA is officially launched.
 
 ## Abstract
 <!--A short (~200 word) description of the proposed change, the abstract should clearly describe the proposed change. This is what *will* be done if the LEAP is implemented, not *why* it should be done or *how* it will be done. If the LEAP proposes deploying a new contract, write, "we propose to deploy a new contract that will do x".-->
@@ -25,18 +25,18 @@ This LEAP proposes incentivising users to provide liquidity to the following poo
 | [Uniswap sUSD / ETH](https://optimistic.etherscan.io/address/0xa194977b416f082f71a0362041b57208c91ee1c1) | 375,000 LYRA | Monday 13 September 00:00 UTC | Monday 27 September 00:00 UTC |
 | [Lyra ETH](https://optimistic.etherscan.io/address/0x7af4e1ce484f40d927b9c90fb6905df4376fc3f6)| 375,000 LYRA | Friday 17 September 09:00 UTC | Friday 1 October 09:00 UTC |
 
-Users who provide liquidity to either pool will receive LYRA tokens in proportion with their share of the total liquidity. Rewards will be determined using a script that is currently being developed and will be open-sourced on [github](https://github.com/lyra-finance).
+Users who provide liquidity to either pool will receive LYRA tokens in proportion with their share of the total liquidity. Rewards will be determined using a script that is currently being developed and will be open-sourced on [Github](https://github.com/lyra-finance).
 
-The tokens will be distributed at a date yet to be determined. This will likely be at the initial token distribution, which is planned to occur in mid to late October.
+The tokens will be distributed at a date yet to be determined. This will likely be at the initial token distribution, which is planned to occur in late October.
 
 ## Motivation
 <!--This is the problem statement. This is the *why* of the LEAP. It should clearly explain *why* the current state of the protocol is inadequate.  It is critical that you explain *why* the change is needed, if the LEAP proposes changing how something is calculated, you must address *why* the current calculation is innaccurate or wrong. This is not the place to describe how the LEAP will address the issue!-->
-The first round finished succesfully but with only 500,000 sUSD in liquidity the trading experience is far from ideal. Due to the collateralisation requirements, it is only possible for the AMM to sell around 100 options at current ETH prices. As such, slippage was set high, discouraging large trades. Traders have also struggled to acquire sUSD through Uniswap without incurring substantial slippage.
+The first round finished succesfully but with only 500,000 sUSD in liquidity the trading experience is far from ideal. Due to the collateralisation requirements, it is only possible for the AMM to sell around 100 options at current ETH prices. As such, slippage was set high to discourage large orders. Traders have also struggled to acquire sUSD through Uniswap without incurring substantial slippage.
 
 With only 8 million sUSD on OΞ, it is clear that we need to increase the supply. Our community is aligned with Synthetix here, who are currently pursuing three routes:
 - Divert inflation from L1 ([SCCP-1336](https://sips.synthetix.io/sccp/sccp-136))
 - Lower the c-ratio ([SCCP-137](https://sips.synthetix.io/sccp/sccp-137))
-- Launch the ETH wrapper
+- Launching the ETH wrapper
 
 Introducing LYRA rewards will provide another incentive for more stakers to move to OΞ.
 
