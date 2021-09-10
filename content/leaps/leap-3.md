@@ -1,6 +1,6 @@
 ---
 leap: 3
-title: Incentivise Uniswap sUSD / ETH and Lyra ETH pools
+title: Incentivise Uniswap sUSD / Dai and ETH Market Pool
 status: Proposed
 author: Michael Spain (@mjs-12)
 created: 2021-09-8
@@ -11,8 +11,8 @@ created: 2021-09-8
 ## Simple Summary
 <!--"If you can't explain it simply, you don't understand it well enough." Simply describe the outcome the proposed changes intends to achieve. This should be non-technical and accessible to a casual community member.-->
 Distribute LYRA tokens to users who provide liquidity to the following pools:
-- [Uniswap sUSD / ETH](https://optimistic.etherscan.io/address/0xa194977b416f082f71a0362041b57208c91ee1c1)
-- [Lyra ETH](https://optimistic.etherscan.io/address/0x7af4e1ce484f40d927b9c90fb6905df4376fc3f6)
+- [Uniswap sUSD / Dai](https://optimistic.etherscan.io/address/0xa14e5b3ba5dd981b536e0950390b03972b795018)
+- [ETH Market Pool](https://optimistic.etherscan.io/address/0x7af4e1ce484f40d927b9c90fb6905df4376fc3f6)
 
 This will be a trial program running from Monday 13 September to Friday 1 October. The rewards will be distributed when LYRA is officially launched.
 
@@ -22,8 +22,8 @@ This LEAP proposes incentivising users to provide liquidity to the following poo
 
 | Pool        | Reward      | Beginning | Ending |
 | ----------- | ----------- | ----------- | ----------- |
-| [Uniswap sUSD / ETH](https://optimistic.etherscan.io/address/0xa194977b416f082f71a0362041b57208c91ee1c1) | 375,000 LYRA | Monday 13 September 00:00 UTC | Monday 27 September 00:00 UTC |
-| [Lyra ETH](https://optimistic.etherscan.io/address/0x7af4e1ce484f40d927b9c90fb6905df4376fc3f6)| 375,000 LYRA | Friday 17 September 09:00 UTC | Friday 1 October 09:00 UTC |
+| [Uniswap sUSD / Dai](https://optimistic.etherscan.io/address/0xa14e5b3ba5dd981b536e0950390b03972b795018) | 375,000 LYRA | Monday 13 September 00:00 UTC | Monday 27 September 00:00 UTC |
+| [ETH Market Pool](https://optimistic.etherscan.io/address/0x7af4e1ce484f40d927b9c90fb6905df4376fc3f6)| 375,000 LYRA | Friday 17 September 09:00 UTC | Friday 1 October 09:00 UTC |
 
 Users who provide liquidity to either pool will receive LYRA tokens in proportion with their share of the total liquidity. Rewards will be determined using a script that is currently being developed and will be open-sourced on [Github](https://github.com/lyra-finance).
 
@@ -58,17 +58,17 @@ Since the LYRA token is not live, it is not feasible to use the popular staking 
 It is not easy to determine how many tokens to distribute without a market valuation. It is also still relatively difficult for stakers to move debt from L1 to L2. Given the total supply of 1B tokens (verifiable [here](https://etherscan.io/token/0x01ba67aac7f75f647d94220cc98fb30fcc5105bf)), a distribution of 750k over two weeks (20M annualised) seems like a reasonable start. By running a two week trial, we can observe:
 - How much the sUSD supply expands
 - What % of the sUSD supply goes to the Uniswap pool
-- What % of the sUSD supply goes to the Lyra ETH pool
+- What % of the sUSD supply goes to the ETH Market pool
 
-This information will help inform future incentive programs. The Uniswap pool rewards begin before the Lyra ETH pool rewards to allow the pool of available sUSD on OΞ to increase, enabling prospective Lyra LPs who are not SNX holders to swap ETH for sUSD in the Uniswap pool.
+This information will help inform future incentive programs. The Uniswap pool rewards begin before the ETH Market Pool rewards to allow the supply of sUSD on OΞ to increase, enabling prospective Lyra LPs who are not SNX holders to swap ETH for sUSD in the Uniswap pool.
 
 ### Technical Specification
 <!--The technical specification should outline the public API of the changes proposed. That is, changes to any of the interfaces Lyra currently exposes or the creations of new ones.-->
 
-#### Uniswap sUSD / ETH
+#### Uniswap sUSD / Dai
 
 ```
-Address: 0xa194977b416f082f71a0362041b57208c91ee1c1
+Address: 0xA14e5b3BA5dd981b536E0950390b03972B795018
 Amount: 375,000 LYRA
 Start: 1631491200
 End: 1632700800
@@ -76,8 +76,8 @@ End: 1632700800
 
 To be eligible for the rewards, liquidity must be provided with the following bounds:
 ```
-950 < minPrice < 1050
-7950 < maxPrice < 8050
+minPrice = 0.99005
+maxPrice = 1.01
 ```
 
 Although this reduces the flexibility afforded by Uniswap V3, it simplifies the logic for determining who is eligible to receive rewards. It will also ensure that  people are providing liquidity on both sides of the market and not trying to game the rewards system by not making their liquidity active.
@@ -94,7 +94,7 @@ The algorithm for the script is as follows:
 8. Allocate share of tokens for the snapshot period to each nft/owner
 ```
 
-#### Lyra ETH
+#### ETH Market Pool
 
 ```
 Address: 0x7af4e1ce484f40d927b9c90fb6905df4376fc3f6
