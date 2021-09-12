@@ -76,13 +76,13 @@ End: 1632700800
 
 To be eligible for the rewards, liquidity must be provided with the following bounds:
 ```
-minPrice = 0.99005
-maxPrice = 1.01
+minPrice = 0.99005 DAI per sUSD (tickLower = -100)
+maxPrice = 1.2995 DAI per sUSD (tickUpper = 2620)
 ```
 
-Although this reduces the flexibility afforded by Uniswap V3, it simplifies the logic for determining who is eligible to receive rewards. It will also ensure that  people are providing liquidity on both sides of the market and not trying to game the rewards system by not making their liquidity active.
+Although fixing the bounds reduces the flexibility afforded by Uniswap V3, it simplifies the logic for determining who is eligible to receive rewards. It will also ensure that people are providing liquidity on both sides of the market and not trying to game the rewards system by not making their liquidity active. The skewed range attempts to capture the imbalance of liquidity that exists between DAI, which is easily moved between L1 to L2, and sUSD, which is limited by the number of SNX that exists on L2.
 
-The algorithm for the script is as follows:
+The start and end period will be broken up into 3 hour chunks, where the following algorithm is applied:
 ```
 1. Find all mint events at the pool address
 2. Find all nft ids using transfer events that are at the same block number as the mint events
@@ -107,7 +107,7 @@ To be eligible for the rewards, sUSD must be deposited before the start of the r
 
 ### Test Cases
 <!--Test cases for an implementation are mandatory for LEAPs but can be included with the implementation..-->
-Test cases for this LEAP will be provdied with the script.
+The script will be open sourced and available for anyone to run and verify.
 
 ### Configurable Values
 <!--Please list all values configurable under this implementation.-->
