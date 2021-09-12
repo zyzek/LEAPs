@@ -1,7 +1,7 @@
 ---
 leap: 3
 title: Incentivise Uniswap sUSD / Dai and ETH Market Pool
-status: Proposed
+status: Implemented
 author: Michael Spain (@mjs-12)
 created: 2021-09-8
 ---
@@ -34,11 +34,13 @@ The tokens will be distributed on a date yet to be determined. This will likely 
 The first round finished succesfully but with only 500,000 sUSD in liquidity the trading experience is far from ideal. Due to the collateralisation requirements, it is only possible for the AMM to sell around 100 options at current ETH prices. As such, slippage was set high to discourage large orders. Traders have also struggled to acquire sUSD through Uniswap without incurring substantial slippage.
 
 With only 8 million sUSD on OΞ, it is clear that we need to increase the supply. Our community is aligned with Synthetix here, who are currently pursuing three routes:
-- Divert inflation from L1 ([SCCP-1336](https://sips.synthetix.io/sccp/sccp-136))
+- Divert inflation from L1 ([SCCP-136](https://sips.synthetix.io/sccp/sccp-136))
 - Lower the c-ratio ([SCCP-137](https://sips.synthetix.io/sccp/sccp-137))
 - Launching the ETH wrapper
 
-Introducing LYRA rewards will provide another incentive for more stakers to move to OΞ.
+Introducing LYRA rewards will provide another incentive for stakers to migrate their debt from L1 to OE. This should lead to the following outcomes:
+1. Increase the amount of liquidity available to Lyra’s ETH Market. 
+2. Reduce the cost of acquiring sUSD on OE for non snx stakers, enabling liquidity providers and traders from the broader community to access the platform. 
 
 ## Specification
 <!--The specification should describe the syntax and semantics of any new feature, there are five sections
@@ -60,7 +62,7 @@ It is not easy to determine how many tokens to distribute without a market valua
 - What % of the sUSD supply goes to the Uniswap pool
 - What % of the sUSD supply goes to the ETH Market pool
 
-This information will help inform future incentive programs. The Uniswap pool rewards begin before the ETH Market Pool rewards to allow the supply of sUSD on OΞ to increase, enabling prospective Lyra LPs who are not SNX holders to swap ETH for sUSD in the Uniswap pool.
+This information will help inform future incentive programs. The Uniswap pool rewards begin before the ETH Market Pool rewards to allow the supply of sUSD on OΞ to increase, enabling prospective Lyra LPs who are not SNX holders to acquire sUSD in the Uniswap pool.
 
 ### Technical Specification
 <!--The technical specification should outline the public API of the changes proposed. That is, changes to any of the interfaces Lyra currently exposes or the creations of new ones.-->
