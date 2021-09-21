@@ -19,7 +19,7 @@ This LEAP proposes launching the LINK market on the Optimistic Ethereum (OΞ) ma
 
 ## Motivation
 <!--This is the problem statement. This is the *why* of the LEAP. It should clearly explain *why* the current state of the protocol is inadequate.  It is critical that you explain *why* the change is needed, if the LEAP proposes changing how something is calculated, you must address *why* the current calculation is innaccurate or wrong. This is not the place to describe how the LEAP will address the issue!-->
-Lyra's AMM mechanism generalizes to any asset with a liquid spot market. sLINK is now tradeable on Synthetix's Optimistic Ethereum (OΞ) deployment, and currently Lyra only offers options on ETH. 
+Lyra's AMM mechanism generalizes to any asset with a liquid spot market. sLINK is now tradeable on Synthetix's Optimistic Ethereum (OΞ) deployment, and the addition of a LINK market would increase the range of assets available to traders. 
 
 ## Specification
 <!--The specification should describe the syntax and semantics of any new feature, there are five sections
