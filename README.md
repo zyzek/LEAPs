@@ -2,7 +2,7 @@ Lyra Enhancement Action Proposals (LEAPs) describe standards for the Lyra Protoc
 
 # Contributing
 
-1.  Review [LEAP-1](leaps/leap-1.md).
+1.  Review [LEAP-1](content/leaps/leap-1.md).
 2.  Fork the repository by clicking "Fork" in the top right.
 3.  Add your LEAP to your fork of the repository. There is a [template LEAP here](leap-x.md).
 4.  Submit a Pull Request to Lyra's [LEAPs repository](https://github.com/lyra-finance/LEAPs).
