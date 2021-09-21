@@ -2,7 +2,7 @@
 leap: 3
 title: Incentivise Uniswap sUSD / Dai and ETH Market Pool
 status: Implemented
-author: Michael Spain (@mjs-12)
+author: mjs (@mjs-12)
 created: 2021-09-8
 ---
 
