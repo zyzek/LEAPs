@@ -1,9 +1,9 @@
+---
 LEAP: 4
 title: Incentivise Uniswap sUSD / Dai Round 2
 status: Draft
 author: Ksett
 created: 2021-9-22
-requires (*optional): <LEAP number(s)>
 ---
 
 <!--You can leave these HTML comments in your merged LEAP and delete the visible duplicate text guides, they will not appear and may be helpful to refer to if you edit it again. This is the suggested template for new LEAPs. Note that a LEAP number will be assigned by an editor. When opening a pull request to submit your LEAP, please use an abbreviated title in the filename, `leap-draft_title_abbrev.md`. The title should be 44 characters or less.-->
@@ -23,8 +23,7 @@ occur in late October.
 
 | Pool          | Reward        | Begining         | Ending           |
 | ------------- | ------------- | ---------------- | ---------------- |
-| [Uniswap sUSD / Dai](https://optimistic.etherscan.io/address/0xa14e5b3ba5dd981b536e0950390b03972b795018)| 187,500       | Monday 27 September | Monday 4 October |
-|               | LYRA          | 00:00 UTC        | 00:00 UTC        |
+| [Uniswap sUSD / Dai](https://optimistic.etherscan.io/address/0xa14e5b3ba5dd981b536e0950390b03972b795018)| 187,500 LYRA | Monday 27 September 00:00 UTC | Monday 4 October 00:00 UTC |
 
 
 ## Motivation
