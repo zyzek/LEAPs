@@ -1,5 +1,5 @@
 ---
-LEAP: 4
+leap: 4
 title: Incentivise Uniswap sUSD / Dai Round 2
 status: Draft
 author: Ksett
