@@ -10,7 +10,7 @@ created: 2021-09-21
 
 ## Simple Summary
 <!--"If you can't explain it simply, you don't understand it well enough." Simply describe the outcome the proposed changes intends to achieve. This should be non-technical and accessible to a casual community member.-->
-Launch the Lyra LINK market on the Optimistic Ethereum mainnet, and the first ever LINK options market in the world.
+Launch the Lyra LINK market on the Optimistic Ethereum mainnet, which would be the first ever LINK options market.
 
 ## Abstract
 <!--A short (~200 word) description of the proposed change, the abstract should clearly describe the proposed change. This is what *will* be done if the LEAP is implemented, not *why* it should be done or *how* it will be done. If the LEAP proposes deploying a new contract, write, "we propose to deploy a new contract that will do x".-->
