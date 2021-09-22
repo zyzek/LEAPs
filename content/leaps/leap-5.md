@@ -15,7 +15,7 @@ Launch the Lyra LINK market on the Optimistic Ethereum mainnet, which would be t
 ## Abstract
 <!--A short (~200 word) description of the proposed change, the abstract should clearly describe the proposed change. This is what *will* be done if the LEAP is implemented, not *why* it should be done or *how* it will be done. If the LEAP proposes deploying a new contract, write, "we propose to deploy a new contract that will do x".-->
 
-This LEAP proposes launching the LINK market on the Optimistic Ethereum (OΞ) mainnet. A two week liquidity round will be initiated, two boards will be created which expire 7, 14, 21 and 28 days following launch (all at 8am UTC time). Each board will have seven strikes listed.
+This LEAP proposes launching the LINK market on the Optimistic Ethereum (OΞ) mainnet. A four week liquidity round will be initiated, four boards will be created which expire 7, 14, 21 and 28 days following launch (all at 8am UTC time). Each board will have seven strikes listed.
 
 ## Motivation
 <!--This is the problem statement. This is the *why* of the LEAP. It should clearly explain *why* the current state of the protocol is inadequate.  It is critical that you explain *why* the change is needed, if the LEAP proposes changing how something is calculated, you must address *why* the current calculation is innaccurate or wrong. This is not the place to describe how the LEAP will address the issue!-->
