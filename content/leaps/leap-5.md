@@ -46,8 +46,7 @@ This LEAP proposes launching the LINK market alongside the ETH market. The ETH m
 Liquidity sourcing and possible rewards will be discussed by the Council prior to market launch. 
 
 #### 2. Options Quoted
-Options will be listed with 7 and 14 days from launch expiries. Longer dated expirations are desirable, but not feasible before the Optimism regenesis timelines are determined. 
-
+Options will be listed with 7, 14, 21 and 28 from launch expiries.
 ### Test Cases
 <!--Test cases for an implementation are mandatory for LEAPs but can be included with the implementation..-->
 Test cases are included with the implementation and are available [here](https://github.com/lyra-finance/lyra-protocol/tree/master/test)
