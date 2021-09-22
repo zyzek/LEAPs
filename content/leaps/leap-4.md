@@ -23,7 +23,7 @@ occur in late October.
 
 | Pool          | Reward        | Begining         | Ending           |
 | ------------- | ------------- | ---------------- | ---------------- |
-| [Uniswap sUSD / Dai](https://optimistic.etherscan.io/address/0xa14e5b3ba5dd981b536e0950390b03972b795018)| 187,500 LYRA | Monday 27 September 00:00 UTC | Monday 4 October 00:00 UTC |
+| [Uniswap sUSD / Dai](https://optimistic.etherscan.io/address/0xa14e5b3ba5dd981b536e0950390b03972b795018)| 150,000 LYRA | Monday 27 September 00:00 UTC | Monday 4 October 00:00 UTC |
 
 
 ## Motivation
@@ -38,10 +38,10 @@ synthetix, we can offer a new liquidity mining program with a lower range to wor
 Continuing LYRA rewards for a lower and symetrical liquidity range will provide incentive for stakers to migrate their debt from L1 to OE and for current LPs to sell some sUSD
 for DAI or bring more DAI over from L1 to continue liquidity providing. This should lead to the following outcomes:
 
-Moving the upper bound of the liquidity range closer to the current market. 
-Requiring equal parts sUSD/DAI to liquidity provide in the range. 
-Reduce the cost of acquiring sUSD on OE for non snx stakers, enabling liquidity providers and traders from the broader community to access the platform. 
-Reduce the time frame to allow more flexibility to change with market conditions 
+- Moving the upper bound of the liquidity range closer to the current market. 
+- Requiring equal parts sUSD/DAI to liquidity provide in the range. 
+- Reduce the cost of acquiring sUSD on OE for non snx stakers, enabling liquidity providers and traders from the broader community to access the platform. 
+- Reduce the time frame to allow more flexibility to change with market conditions 
 
 
 ## Specification
@@ -58,8 +58,9 @@ determines the average liquidity provided by an address over the period. The wor
 
 
 It is not easy to determine how many tokens to distribute without a market valuation. It is also still relatively difficult for stakers to move debt from L1 to L2. Given the
-total supply of 1B tokens (verifiable here), a distribution of 187,500 over one week for sUSD/DAI pool continues with the reasonable 20M annualized distribution layed out in
-LEAP-3. By running a one week program, we can observe:
+total supply of 1B tokens ([verifiable here](https://etherscan.io/token/0x01ba67aac7f75f647d94220cc98fb30fcc5105bf)), a distribution of 150,000 over one week for sUSD/DAI pool
+represents a 20% decrease in lyra rewards from the previous two weeks layed out in LEAP-3. The decrease in rewards is to signal a desire to still incentivise the sUSD/DAI pool
+to support Lyras user experience, but the intention to not do so in perpituity.  By running a one week program, we can observe:
 
 - What happens to the sUSD/DAI ratio 
 - How much the sUSD supply expands 
@@ -75,13 +76,14 @@ This information will help inform future incentive programs.
 Uniswap sUSD / Dai
 ```
 Address: 0xA14e5b3BA5dd981b536E0950390b03972B795018
-Amount: 187,500 LYRA
-Start: XXXXX
-End: XXXXXXX
+Amount: 150,000 LYRA
+Start: 1632700800 
+End: 1633305600
 ```
 
-An algorithm will be used to determine the range to be eligible for the rewards, liquidity must be provided with the following bounds:
+An algorithm will be used to determine the range to be eligible for the rewards, the selected ratio will be announced in Lyras discord channel.  Liquidity must be provided with the following bounds:
 ```
+Current Ratio = Uniswap sUSD/DAI spot price snapshot 1 hour before the incetive launch
 maxPrice = Current ratio + .05 (rounded to the nearest .01)
 minPrice = 1 - (maxPrice - 1)
 ```
@@ -112,9 +114,9 @@ The script will be open sourced and available for anyone to run and verify.
 <!--Please list all values configurable under this implementation.-->
 
 ```
-Uniswap Rewards = 187,500
-Uniswap Start = XXXXX
-Uniswap End = XXXXXX
+Uniswap Rewards = 150,000
+Uniswap Start = 1632700800
+Uniswap End = 1633305600
 ```
 
 
