@@ -1,7 +1,7 @@
 ---
 leap: 4
 title: Incentivise Uniswap sUSD / Dai Round 2
-status: Proposed
+status: Implemented
 author: Ksett (@ksett7)
 created: 2021-9-22
 ---
