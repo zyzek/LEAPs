@@ -11,6 +11,7 @@ requires: LEAP-5
 Distribute LYRA tokens to users who provide liquidity to the following pools:
 
 [Lyra ETH Option Market](https://optimistic.etherscan.io/address/0x176b9e1BcE6757Ab23235FA9899B32e89B105b0d)
+
 [Lyra LINK Option Market](https://optimistic.etherscan.io/address/0xd0Df278F36778a5cCE926B92Ccc90B2bbbBfB3B3)
 
 This program will run from Friday, 1st October through Tuesday, October 25th. (End date may change depending on news from Optimism - ideally
@@ -23,12 +24,12 @@ new LINK option market. Users who provide liquidity will receive LYRA tokens in 
 specific market. The tokens will be distributed on a date yet to be determined.
 
 
-Rewards should match the previous incentive (187,500 per week, over 4 weeks = 750,000) with a 70 (ETH) to 30 (LINK) split of them.
+Rewards should match the previous incentive (187,500 per week, over 4 weeks = 750,000) with an 80 (ETH) to 20 (LINK) split of them.
 
 | Pool          | Reward        | Begining         | Ending           |
 | ------------- | ------------- | ---------------- | ---------------- |
-| [Lyra ETH option market](https://optimistic.etherscan.io/address/0x176b9e1BcE6757Ab23235FA9899B32e89B105b0d)| 525,000 LYRA | Friday 1 October 09:00 UTC | Tuesday 25 October 09:00 UTC |
-| [Lyra LINK option market](https://optimistic.etherscan.io/address/0xd0Df278F36778a5cCE926B92Ccc90B2bbbBfB3B3)| 225,000 LYRA | Friday 1 October 09:00 UTC | Tuesday 25 October 09:00 UTC |
+| [Lyra ETH option market](https://optimistic.etherscan.io/address/0x176b9e1BcE6757Ab23235FA9899B32e89B105b0d)| 600,000 LYRA | Friday 1 October 09:00 UTC | Tuesday 25 October 09:00 UTC |
+| [Lyra LINK option market](https://optimistic.etherscan.io/address/0xd0Df278F36778a5cCE926B92Ccc90B2bbbBfB3B3)| 150,000 LYRA | Friday 1 October 09:00 UTC | Tuesday 25 October 09:00 UTC |
 
 
 ## Motivation
@@ -49,7 +50,7 @@ that determines the average liquidity provided by an address over the period. Th
 
 ### Rationale
 
-As previous reward programs were successful, we want to maintain momentum by providing a similar amount of rewards. We want to also ensure there is plenty of liquidity in the
+As previous reward programs were successful, we want to maintain momentum by providing a similar amount of rewards. We want to also ensure there is ample liquidity in the
 LINK market, as it is the first of it's kind anywhere.
 
 ### Technical Specification
@@ -57,7 +58,7 @@ LINK market, as it is the first of it's kind anywhere.
 Lyra ETH Option Market
 ```
 Address: 0xA14e5b3BA5dd981b536E0950390b03972B795018
-Amount: 525,000 LYRA
+Amount: 600,000 LYRA
 Start: 1632700800
 End: 1633305600
 ```
@@ -65,7 +66,7 @@ End: 1633305600
 Lyra LINK Option Market
 ```
 Address: 0xA14e5b3BA5dd981b536E0950390b03972B795018
-Amount: 225,000 LYRA
+Amount: 150,000 LYRA
 Start: 1632700800
 End: 1633305600
 ```
@@ -77,13 +78,13 @@ The script will be open sourced and available for anyone to run and verify.
 ### Configurable Values
 
 ```
-Lyra ETH Market Rewards = 375,000
-Lyra LINK Market Start = 1633078800
-Lyra LINK Market End = 1635148800
+Lyra ETH Market Rewards = 600,000
+Lyra LINK Market Start = 1632700800
+Lyra LINK Market End = 1633305600
 
-Lyra LINK Market Rewards = 375,000
-Lyra LINK Market Start = 1633078800
-Lyra LINK Market End = 1635148800
+Lyra LINK Market Rewards = 150,000
+Lyra LINK Market Start = 1632700800
+Lyra LINK Market End = 1633305600
 ```
 
 ## Copyright
