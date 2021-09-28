@@ -59,16 +59,16 @@ Lyra ETH Option Market
 ```
 Address: 0xA14e5b3BA5dd981b536E0950390b03972B795018
 Amount: 600,000 LYRA
-Start: 1632700800
-End: 1633305600
+Start: 1633071600
+End: 1635145200
 ```
 
 Lyra LINK Option Market
 ```
 Address: 0xA14e5b3BA5dd981b536E0950390b03972B795018
 Amount: 150,000 LYRA
-Start: 1632700800
-End: 1633305600
+Start: 1633071600
+End: 1635145200
 ```
 
 ### Test Cases
@@ -79,12 +79,12 @@ The script will be open sourced and available for anyone to run and verify.
 
 ```
 Lyra ETH Market Rewards = 600,000
-Lyra LINK Market Start = 1632700800
-Lyra LINK Market End = 1633305600
+Lyra LINK Market Start = 1633071600
+Lyra LINK Market End = 1635145200
 
 Lyra LINK Market Rewards = 150,000
-Lyra LINK Market Start = 1632700800
-Lyra LINK Market End = 1633305600
+Lyra LINK Market Start = 1633071600
+Lyra LINK Market End = 1635145200
 ```
 
 ## Copyright
