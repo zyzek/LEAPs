@@ -1,7 +1,7 @@
 ---
 leap: 6
 title: Incentivise Lyra ETH and LINK option markets
-status: Draft
+status: Proposed
 author: Domrom (@DominicRomanowski)
 created: 2021-9-28
 requires: LEAP-5
