@@ -10,10 +10,13 @@ created: 2021-9-22
 
 ## Simple Summary
 Distribute LYRA tokens to users who provide liquidity to the following pool:
+This LEAP includes modified paramaters for V4.1
 
 [Uniswap sUSD / Dai](https://optimistic.etherscan.io/address/0xa14e5b3ba5dd981b536e0950390b03972b795018)
 
 This program will run from Monday, 27 September through Monday, October 4th.
+
+V4.1  will run from Monday, 4th October through Monday, October 11th.
 
 ## Abstract
 <!--A short (~200 word) description of the proposed change, the abstract should clearly describe the proposed change. This is what *will* be done if the LEAP is implemented, not *why* it should be done or *how* it will be done. If the LEAP proposes deploying a new contract, write, "we propose to deploy a new contract that will do x".-->
@@ -24,6 +27,7 @@ occur in late October.
 | Pool          | Reward        | Begining         | Ending           |
 | ------------- | ------------- | ---------------- | ---------------- |
 | [Uniswap sUSD / Dai](https://optimistic.etherscan.io/address/0xa14e5b3ba5dd981b536e0950390b03972b795018)| 150,000 LYRA | Monday 27 September 00:00 UTC | Monday 4 October 00:00 UTC |
+| [Uniswap sUSD / Dai](https://optimistic.etherscan.io/address/0xa14e5b3ba5dd981b536e0950390b03972b795018)| 150,000 LYRA | Monday 4 October 00:00 UTC | Monday 11 October 00:00 UTC |
 
 
 ## Motivation
@@ -67,7 +71,11 @@ to support Lyras user experience, but the intention to not do so in perpituity. 
 - What % of the sUSD supply goes to the Uniswap pool 
 - What % of the sUSD supply goes to the ETH Market pool 
 
+V4.1 will extend the existing liquidity mining program for an additional week while we continue to evaluate market forces and conditions. 
+
 This information will help inform future incentive programs.
+
+
 
 ### Technical Specification
 <!--The technical specification should outline the public API of the changes proposed. That is, changes to any of the interfaces Lyra currently exposes or the creations of new ones.-->
@@ -81,12 +89,26 @@ Start: 1632700800
 End: 1633305600
 ```
 
+V4.1 Uniswap sUSD / Dai
+```
+Address: 0xA14e5b3BA5dd981b536E0950390b03972B795018
+Amount: 150,000 LYRA
+Start: 1633305600 
+End: 1633910400
+```
+
 An algorithm will be used to determine the range to be eligible for the rewards, the selected ratio will be announced in Lyras discord channel.  Liquidity must be provided with the following bounds:
 ```
 Current Ratio = Uniswap sUSD/DAI spot price snapshot 1 hour before the incetive launch
 maxPrice = Current ratio + .05 (rounded to the nearest .01)
 minPrice = 1 - (maxPrice - 1)
 ```
+V4.1 will use the same range calculated using the algorithm in LEAP-4
+```
+Min price: 0.80012 DAI per sUSD (-2230 mintick)
+Max price: 1.1996 DAI per sUSD (1820 maxtick)
+```
+
 
 Although fixing the bounds reduces the flexibility afforded by Uniswap V3, it simplifies the logic for determining who is eligible to receive rewards. It will also ensure that
 people are providing liquidity on both sides of the market and not trying to game the rewards system by not making their liquidity active. The symetrical range attempts to
@@ -113,12 +135,18 @@ The script will be open sourced and available for anyone to run and verify.
 ### Configurable Values
 <!--Please list all values configurable under this implementation.-->
 
+LEAP-4
 ```
 Uniswap Rewards = 150,000
 Uniswap Start = 1632700800
 Uniswap End = 1633305600
 ```
-
+V4.1
+```
+Uniswap Rewards = 150,000
+Uniswap Start = 1633305600 
+Uniswap End = 1633910400
+```
 
 
 
