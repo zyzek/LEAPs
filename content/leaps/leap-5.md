@@ -1,7 +1,7 @@
 ---
 leap: 5
 title: Launch LINK Market
-status: Approved
+status: Implemented
 author: Nick Forster (@nickf24)
 created: 2021-09-21
 ---
