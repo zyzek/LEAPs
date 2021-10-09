@@ -123,8 +123,8 @@ Max price: 1.1996 DAI per sUSD (1820 maxtick)
 ```
 V4.2 will use a lower and tighter range than V4.1
 ```
-Min price: 0.8496 DAI per sUSD (-2230 mintick)
-Max price: 1.1503 DAI per sUSD (1820 maxtick)
+Min price: 0.8496 DAI per sUSD (-1640 mintick)
+Max price: 1.1503 DAI per sUSD (1400 maxtick)
 ```
 
 Although fixing the bounds reduces the flexibility afforded by Uniswap V3, it simplifies the logic for determining who is eligible to receive rewards. It will also ensure that people are providing liquidity on both sides of the market and not trying to game the rewards system by not making their liquidity active. The symetrical range attempts to entice current liquidity providers to swap their sUSD for DAI to remain in the pool as it will require roughly equal parts of both.  While users can easily bridge DAI to OE quite easily, its likely that these LPs already have as much liquidity on OE as their risk tolerance allows. 
