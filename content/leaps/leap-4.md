@@ -18,7 +18,7 @@ This program will run from Monday, 27 September through Monday, October 4th.
 
 V4.1  will run from Monday, 4th October through Monday, October 11th.
 
-V4.2  will begin Monday, 11th October, end date to be determined by council.
+V4.2  will begin Monday, 11th October, end date to be determined by council with 72 hours notice to LP's.
 
 
 ## Abstract
@@ -75,7 +75,7 @@ to support Lyras user experience, but the intention to not do so in perpituity. 
 
 V4.1 will extend the existing liquidity mining program for an additional week while we continue to evaluate market forces and conditions. 
 
-V4.2 will lower and tighten the trading range and extend the liquidity mining program for an additional week.  The rewards will continue to be reduced by an additional 10%, 18,750 LYRA each week while the program is in effect.  We will continue to evaluate market forces and conditions during this program. Council may change the range required to receive rewards or discontinue the program at any time with 24 hours notice.  Any changes will be announced via discord
+V4.2 will lower and tighten the trading range and extend the liquidity mining program for an additional week.  The rewards will continue to be reduced by an additional 10%, 18,750 LYRA each week while the program is in effect.  We will continue to evaluate market forces and conditions during this program. Council may change the range required to receive rewards at any time with 24 hours notice or discontinue the program at any time with 72 hours notice.  Any changes will be announced via discord
 
 This information will help inform future incentive programs.
 
