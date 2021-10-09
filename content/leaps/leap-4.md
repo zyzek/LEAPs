@@ -18,17 +18,21 @@ This program will run from Monday, 27 September through Monday, October 4th.
 
 V4.1  will run from Monday, 4th October through Monday, October 11th.
 
+V4.2  will begin Monday, 11th October, end date to be determined by council with 72 hours notice to LP's.
+
+
 ## Abstract
 <!--A short (~200 word) description of the proposed change, the abstract should clearly describe the proposed change. This is what *will* be done if the LEAP is implemented, not *why* it should be done or *how* it will be done. If the LEAP proposes deploying a new contract, write, "we propose to deploy a new contract that will do x".-->
 LEAP-4 is intended to be a continuation of Lyra's liquidity mining program on Uniswap's sUSD/DAI pair.  Users who provide liquidity will receive LYRA tokens in proportion with
 their share of the total liquidity. The tokens will be distributed on a date yet to be determined. This will likely be around the initial token distribution, which is planned to
 occur in late October.
 
-| Pool          | Reward        | Begining         | Ending           |
+
+| Pool          | Weekly Rewards| Begining         | Ending           |
 | ------------- | ------------- | ---------------- | ---------------- |
 | [Uniswap sUSD / Dai](https://optimistic.etherscan.io/address/0xa14e5b3ba5dd981b536e0950390b03972b795018)| 150,000 LYRA | Monday 27 September 00:00 UTC | Monday 4 October 00:00 UTC |
 | [Uniswap sUSD / Dai](https://optimistic.etherscan.io/address/0xa14e5b3ba5dd981b536e0950390b03972b795018)| 150,000 LYRA | Monday 4 October 00:00 UTC | Monday 11 October 00:00 UTC |
-
+| [Uniswap sUSD / Dai](https://optimistic.etherscan.io/address/0xa14e5b3ba5dd981b536e0950390b03972b795018)| 112,500 LYRA | Monday 11 October 00:00 UTC | TBD |
 
 ## Motivation
 <!--This is the problem statement. This is the *why* of the LEAP. It should clearly explain *why* the current state of the protocol is inadequate.  It is critical that you explain *why* the change is needed, if the LEAP proposes changing how something is calculated, you must address *why* the current calculation is innaccurate or wrong. This is not the place to describe how the LEAP will address the issue!-->
@@ -42,11 +46,10 @@ synthetix, we can offer a new liquidity mining program with a lower range to wor
 Continuing LYRA rewards for a lower and symetrical liquidity range will provide incentive for stakers to migrate their debt from L1 to OE and for current LPs to sell some sUSD
 for DAI or bring more DAI over from L1 to continue liquidity providing. This should lead to the following outcomes:
 
-- Moving the upper bound of the liquidity range closer to the current market. 
-- Requiring equal parts sUSD/DAI to liquidity provide in the range. 
-- Reduce the cost of acquiring sUSD on OE for non snx stakers, enabling liquidity providers and traders from the broader community to access the platform. 
-- Reduce the time frame to allow more flexibility to change with market conditions 
-
+- Moving the upper bound of the liquidity range closer to the current market.
+- Requiring equal parts sUSD/DAI to liquidity provide in the range.
+- Reduce the cost of acquiring sUSD on OE for non snx stakers, enabling liquidity providers and traders from the broader community to access the platform.
+- Reduce the time frame to allow more flexibility to change with market conditions.
 
 ## Specification
 <!--The specification should describe the syntax and semantics of any new feature, there are five sections
@@ -73,6 +76,8 @@ to support Lyras user experience, but the intention to not do so in perpituity. 
 
 V4.1 will extend the existing liquidity mining program for an additional week while we continue to evaluate market forces and conditions. 
 
+V4.2 will lower and tighten the trading range and extend the liquidity mining program for an additional week.  The rewards will continue to be reduced by an additional 10%, 18,750 LYRA each week while the program is in effect.  We will continue to evaluate market forces and conditions during this program. Council may change the range required to receive rewards at any time with 24 hours notice or discontinue the program at any time with 72 hours notice.  Any changes will be announced via discord
+
 This information will help inform future incentive programs.
 
 
@@ -97,6 +102,14 @@ Start: 1633305600
 End: 1633910400
 ```
 
+V4.2 Uniswap sUSD / Dai
+```
+Address: 0xA14e5b3BA5dd981b536E0950390b03972B795018
+Amount: 112,500 LYRA
+Start: 1633910400 
+End: 1634558400
+```
+
 An algorithm will be used to determine the range to be eligible for the rewards, the selected ratio will be announced in Lyras discord channel.  Liquidity must be provided with the following bounds:
 ```
 Current Ratio = Uniswap sUSD/DAI spot price snapshot 1 hour before the incetive launch
@@ -108,12 +121,13 @@ V4.1 will use the same range calculated using the algorithm in LEAP-4
 Min price: 0.80012 DAI per sUSD (-2230 mintick)
 Max price: 1.1996 DAI per sUSD (1820 maxtick)
 ```
+V4.2 will use a lower and tighter range than V4.1
+```
+Min price: 0.8496 DAI per sUSD (-2230 mintick)
+Max price: 1.1503 DAI per sUSD (1820 maxtick)
+```
 
-
-Although fixing the bounds reduces the flexibility afforded by Uniswap V3, it simplifies the logic for determining who is eligible to receive rewards. It will also ensure that
-people are providing liquidity on both sides of the market and not trying to game the rewards system by not making their liquidity active. The symetrical range attempts to
-entice current liquidity providers to swap their sUSD for DAI to remain in the pool as it will require roughly equal parts of both.  While users can easily bridge DAI to OE
-quite easily, its likely that these LPs already have as much liquidity on OE as their risk tolerance allows. 
+Although fixing the bounds reduces the flexibility afforded by Uniswap V3, it simplifies the logic for determining who is eligible to receive rewards. It will also ensure that people are providing liquidity on both sides of the market and not trying to game the rewards system by not making their liquidity active. The symetrical range attempts to entice current liquidity providers to swap their sUSD for DAI to remain in the pool as it will require roughly equal parts of both.  While users can easily bridge DAI to OE quite easily, its likely that these LPs already have as much liquidity on OE as their risk tolerance allows. 
 
 The start and end period will be broken up into 3 hour chunks, where the following algorithm is applied:
 ```
@@ -147,7 +161,12 @@ Uniswap Rewards = 150,000
 Uniswap Start = 1633305600 
 Uniswap End = 1633910400
 ```
-
+V4.2 Uniswap sUSD / Dai
+```
+Uniswap Rewards: 112,500 
+Start: 1633910400 
+End: 1634558400
+```
 
 
 
