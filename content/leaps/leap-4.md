@@ -165,7 +165,7 @@ V4.2 Uniswap sUSD / Dai
 ```
 Uniswap Rewards: 112,500 
 Start: 1633910400 
-End: 1634558400
+End: 1634515200
 ```
 
 
