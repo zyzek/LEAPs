@@ -123,7 +123,7 @@ Max price: 1.1996 DAI per sUSD (1820 maxtick)
 ```
 V4.2 will use a lower and tighter range than V4.1
 ```
-Min price: 0.8496 DAI per sUSD (-1640 mintick)
+Min price: 0.8496 DAI per sUSD (-1630 mintick)
 Max price: 1.1503 DAI per sUSD (1400 maxtick)
 ```
 
