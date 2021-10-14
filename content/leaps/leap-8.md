@@ -9,11 +9,11 @@ requires: LEAP-5
 
 ## Simple Summary
 
-A distribution plan for Lyra's "ignitiion phase" from November 1 - December 10, culminating in the official launch of LYRA on December 14.
+A distribution plan for Lyra's "ignitiion phase" between November 1 and December 10, before the official token launch on December 14.
 
 ## Abstract
 
-This LEAP proposes distributing 42,000,000 LYRA (4.2% of the total supply) from November 1 - December 10 to the following groups:
+This LEAP proposes distributing 42,000,000 LYRA (4.2% of the total supply) between November 1 and December 10 to the following groups:
 
 | Group | Reward | Notes |
 | ------------- | ------------- | ---------------- |
