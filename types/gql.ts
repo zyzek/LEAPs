@@ -399,6 +399,7 @@ export type MarkdownRemarkFrontmatter = {
   status?: Maybe<Scalars['String']>;
   author?: Maybe<Scalars['String']>;
   created?: Maybe<Scalars['String']>;
+  requires?: Maybe<Scalars['String']>;
 };
 
 
@@ -829,6 +830,7 @@ export type MarkdownRemarkFrontmatterFilterInput = {
   status?: Maybe<StringQueryOperatorInput>;
   author?: Maybe<StringQueryOperatorInput>;
   created?: Maybe<StringQueryOperatorInput>;
+  requires?: Maybe<StringQueryOperatorInput>;
 };
 
 export type JsonQueryOperatorInput = {
@@ -982,6 +984,7 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark___frontmatter___status'
   | 'childrenMarkdownRemark___frontmatter___author'
   | 'childrenMarkdownRemark___frontmatter___created'
+  | 'childrenMarkdownRemark___frontmatter___requires'
   | 'childrenMarkdownRemark___excerpt'
   | 'childrenMarkdownRemark___rawMarkdownBody'
   | 'childrenMarkdownRemark___fileAbsolutePath'
@@ -1041,6 +1044,7 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___frontmatter___status'
   | 'childMarkdownRemark___frontmatter___author'
   | 'childMarkdownRemark___frontmatter___created'
+  | 'childMarkdownRemark___frontmatter___requires'
   | 'childMarkdownRemark___excerpt'
   | 'childMarkdownRemark___rawMarkdownBody'
   | 'childMarkdownRemark___fileAbsolutePath'
@@ -2219,6 +2223,7 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___status'
   | 'frontmatter___author'
   | 'frontmatter___created'
+  | 'frontmatter___requires'
   | 'excerpt'
   | 'rawMarkdownBody'
   | 'fileAbsolutePath'
