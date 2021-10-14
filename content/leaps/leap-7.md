@@ -31,7 +31,7 @@ This LEAP proposes the distribution of the LYRA token.
 
 ### 4. Liquidity Rewards (15%)
 
-150,000,000 LYRA are allocated to Liquidity Providers. Lyra needs liquidity to facilitate options trading. When options are purchased by traders, collateral must be locked to ensure that the option can be paid out if it expires in the money. The rate and
+150,000,000 LYRA are allocated to Liquidity Providers. Lyra needs liquidity to facilitate options trading. When options are purchased by traders, collateral must be locked to ensure that the option can be paid out if it expires in the money.
 
 ### 5. Trading Rewards (15%)
 
