@@ -9,7 +9,7 @@ requires: LEAP-5
 
 ## Simple Summary
 
-This LEAP proposes the distribution of LYRA, which has been structured to incentivise key participants in the protocol to create the best outcomes for each other.
+This LEAP proposes the distribution of the LYRA token.
 
 
 ## Specification

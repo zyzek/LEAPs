@@ -19,8 +19,8 @@ This LEAP proposes distributing 42,000,000 LYRA (4.2% of the total supply) from 
 | ------------- | ------------- | ---------------- |
 | Lyra Market LPs| 15,000,000 LYRA | Split between ETH and LINK markets	 |
 | Lyra Traders | 2,000,000 LYRA | Split between ETH and LINK markets   |
-| Lyra Security Module Stakers | 5,000,000 LYRA | USDC/DAI staking on L1  |
-| SNX L2 Stakers | 20,000,000 LYRA | Average debt on OE |
+| Lyra Security Module Stakers | 5,000,000 LYRA | USDC staking on L1  |
+| SNX L2 Stakers | 20,000,000 LYRA | Average debt on L2 |
 
 The ignition phase will consist of two trading rounds and all LYRA earned during this period will be distributed when the token is launched on December 14.
 
@@ -73,7 +73,7 @@ Liquidity and trading rewards for each round are grouped together, since the lat
 | Lyra Security Module Stakers | 5,000,000 LYRA |
 | SNX L2 Stakers | 20,000,000 LYRA |
 
-The security moodule will be deployed onto Ethereum L1 and allow users to stake USDC or DAI to earn LYRA. Only SNX stakers on Optimism will be eligible for rewards.
+The security moodule will be deployed onto Ethereum L1 and allow users to stake USDC to earn LYRA. Only SNX stakers on Optimism will be eligible for rewards.
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
