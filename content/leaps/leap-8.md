@@ -104,7 +104,7 @@ Those who stake SNX on L2 will receive a share of LYRA in proportion with their 
 This is the maximum number of LYRA that can be distributed to traders for the round. The actual amount will be determined as follows:
 - Long positions: 0.35 LYRA per $1 of fees paid
 - Short positions: 0.45 LYRA per $1 of fees paid
-- Short collateral: (dollars locked in pool / LYRA rewards for the round) * 0.66
+- Short collateral: LYRA LP reward rate * 2/3 * time short position held
 
 
 ## Copyright
