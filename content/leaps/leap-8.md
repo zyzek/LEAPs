@@ -9,7 +9,7 @@ requires: LEAP-5
 
 ## Simple Summary
 
-A token distribution plan for Lyra's "ignitiion phase" between October 25 and January 7, including the official token launch on December 14.
+A token distribution plan for Lyra's "ignition phase" between October 25 and January 7, including the official token launch on December 14.
 
 ## Abstract
 
@@ -47,7 +47,7 @@ There will be two trading rounds in the "pre-ignition" phase:
 | 2 | November 19 | December 10  |
 
 
-There will be one trading round in the "post-ignitiion" phase:
+There will be one trading round in the "post-ignition" phase:
 | Round          | Beginning | Ending         |
 | ------------- | ------------- | ---------------- |
 | 3 | December 10 | January 7 |
@@ -89,7 +89,7 @@ Liquidity and trading rewards for each round are grouped together, since the lat
 | ------------- | ------------- |
 | Lyra Security Module Stakers | 5,000,000 LYRA |
 
-The security moodule will be deployed onto Ethereum L1 and allow users to stake USDC to earn LYRA.
+The security module will be deployed onto Ethereum L1 and allow users to stake USDC to earn LYRA.
 
 #### 5. SNX stakers (October 25 - December 10)
 
