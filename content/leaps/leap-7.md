@@ -16,6 +16,8 @@ This LEAP proposes the distribution of the LYRA token.
 
 ![Total](assets/leap-7/combined.png)
 
+The total supply of LYRA is 1,000,000,000. The token contract can be viewed [here](https://etherscan.io/address/0x01ba67aac7f75f647d94220cc98fb30fcc5105bf). 
+
 
 ### 1. DAO (20%)
 
