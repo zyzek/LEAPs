@@ -27,7 +27,7 @@ This LEAP proposes the distribution of the LYRA token.
 
 ### 3. Investors (10%)
 
-100,000,000 LYRA were sold to private investors. In early February 2021 when the project was in pre-seed phase, 3.4% of the supply was sold at a $15M FDV. The remaining 6.6% was sold during teh seed round in May at a $50M FDV.
+100,000,000 LYRA were sold to private investors. In early February 2021 when the project was in pre-seed phase, 3.4% of the supply was sold at a $15M FDV. The remaining 6.6% was sold during the seed round in May at a $50M FDV.
 
 ### 4. Liquidity Rewards (15%)
 
