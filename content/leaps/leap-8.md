@@ -123,6 +123,8 @@ This is the maximum number of LYRA that can be distributed to traders for the ro
 - Short positions: 0.45 LYRA per $1 of fees paid
 - Short collateral: LYRA LP reward rate * 2/3 * time short position held
 
+If the cap for a round is hit, rewards will be distributed among all traders equally. For example, if a trader is owed 100 LYRA but the total owed for the round is 20% more than the cap, the trader would only receive 100/120 = 83 LYRA.
+
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
