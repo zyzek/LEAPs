@@ -21,15 +21,15 @@ The total supply of LYRA is 1,000,000,000. The token contract can be viewed [her
 
 ### 1. DAO (20%)
 
-200,000,000 LYRA are allocated to the LyraDAO. This DAO aims to ensure the ongoing development of the Lyra Protocol and the general growth of the Lyra ecosystem.  In early September, the LyraDAO sold 0.5% of the supply at a $100M FDV.
+200,000,000 LYRA are allocated to the LyraDAO. This DAO aims to ensure the ongoing development of the Lyra Protocol and the general growth of the Lyra ecosystem.  In early September, the LyraDAO sold 0.5% of the supply at a $100M FDV to a private investor. These tokens are subject to the same vesting conditions as outlined in the investor section below.
 
 ### 2. Core Team (20%)
 
-200,000,000 LYRA were allocated to the core team. This is enough to ensure long-term incentive alignment whilst still allowing the community to own the majority of the project.
+200,000,000 LYRA were allocated to the core team. This is enough to ensure long-term incentive alignment whilst still allowing the community to own the majority of the project. In almost all cases, tokens are locked for six months from the contributors start date and then vest linearly over two years. The vast majority of team tokens (>19%) unlock between January 1 2022 and January 1 2024.
 
 ### 3. Investors (10%)
 
-100,000,000 LYRA were sold to private investors. In early February 2021 when the project was in pre-seed phase, 3.4% of the supply was sold at a $15M FDV. The remaining 6.6% was sold during the seed round in May at a $50M FDV.
+100,000,000 LYRA were sold to private investors. In early February 2021 when the project was in pre-seed phase, 3.4% of the supply was sold at a $15M FDV. The remaining 6.6% was sold during the seed round in May at a $50M FDV. All investor tokens are locked until January 1 2022 and then vest linearly over two years, with the final tokens unlocking on January 1 2024.
 
 ### 4. Liquidity Rewards (15%)
 
