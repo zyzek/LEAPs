@@ -2,7 +2,7 @@
 leap: 8
 title: Launch LYRA Token
 status: Draft
-author: mjs (@mjs-12), Nick Forster (@nickf24), Sean Dawson (@SeanDaws)
+author: mjs (@mjs-12), Nick Forster (@nickf24), Sean Dawson (@SeanDaws), Domrom (@DominicRomanowski), SteveNX, Burt Rock
 created: 2021-9-28
 requires: LEAP-5
 ---
@@ -20,7 +20,8 @@ This LEAP proposes distributing 42,000,000 LYRA (4.2% of the total supply) betwe
 | Lyra Market LPs| 15,000,000 LYRA | Split between all markets	 |
 | Lyra Traders[*](#trading-rewards) | Up to 2,000,000 LYRA | Split between all markets   |
 | Lyra Security Module Stakers | 5,000,000 LYRA | USDC staking on L1  |
-| SNX L2 Stakers | 20,000,000 LYRA | Average debt on L2 |
+| SNX L2 Stakers (pre-ignition) | 19,000,000 LYRA | Average debt on L2 |
+| SNX L2 Stakers (retroactive) | 1,000,000 LYRA | Retroactive average debt on L2 |
 
 All rewards earned during pre-ignition will be distributed on December 14 when the token is oficially launched. From December 10 to January 7 (post-ignition), a further 18,000,000 LYRA (1.8% of the total supply) will be distributed to the following groups:
 
@@ -56,6 +57,8 @@ There will be one trading round in the "post-ignition" phase:
 ### Rationale
 
 By having two pre-ignition trading rounds, we allow LPs who missed the first round another chance to earn rewards before the token is launched. The total amount of trading rewards must be significantly less than the LP rewards to accommodate for the capital inefficiency of the system.
+
+Users who have staked SNX on L2 already have bootstrapped the network by providing crucial sUSD liquidity. By requiring that these stakers also interacted with the Lyra protocol and/or liquidity mining programs, we avoid rewarding idle L2 stakers. 
 
 
 ### Technical Specification
@@ -95,9 +98,23 @@ The security module will be deployed onto Ethereum L1 and allow users to stake U
 
 | Group          | Rewards |
 | ------------- | ------------- |
-| SNX L2 Stakers | 20,000,000 LYRA |
+| SNX L2 Stakers | 19,000,000 LYRA |
 
-Those who stake SNX on L2 will receive a share of LYRA in proportion with their average debt relative to the total L2 debt over the period.
+Those who stake SNX on L2 will receive LYRA in proportion with their average debt relative to the total L2 debt over the period.
+
+#### 6. Retroactive SNX stakers (September 13 - October 10)
+
+| Group          | Rewards |
+| ------------- | ------------- |
+| SNX L2 Stakers | 1,000,000 LYRA |
+
+Those who staked SNX on L2 between September 13 and October 10 and meet at least one of the below requirements will receive LYRA in proportion with their average debt relative to the total L2 debt over their "eligible period". This period begins when they first meet the eligbility requirements.
+
+Eligibility requirements:
+- Provided liquidity to Uniswap pools containing sUSD
+- Sold sUSD on Uniswap in a non synth pair
+- Traded options on Lyra
+- Provided liquidity to the ETH or LINK markets
 
 ### Trading Rewards
 
