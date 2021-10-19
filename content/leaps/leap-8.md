@@ -13,7 +13,7 @@ A token distribution plan for Lyra's "ignition phase" between October 25 and Jan
 
 ## Abstract
 
-This LEAP proposes distributing 42,000,000 LYRA (4.2% of the total supply) between November 1 and December 10 (pre-ignition) to the following groups:
+This LEAP proposes distributing 42,000,000 LYRA (4.2% of the total supply) between October 29 and December 10 (pre-ignition) to the following groups:
 
 | Group | Reward | Notes |
 | ------------- | ------------- | ---------------- |
@@ -30,7 +30,7 @@ All rewards earned during pre-ignition will be distributed on December 14 when t
 | Lyra Market LPs| 12,000,000 LYRA | Split between all markets	 |
 | Lyra Traders[*](#trading-rewards) | Up to 1,600,000 LYRA | Split between all markets   |
 
-Rewards for the post-ignition period will be distributed on January 7.
+Trading rewards for the post-ignition period will be distributed on January 7. Market LP rewards for the post-ignition period will be distributed on December 14 with the token launch, since the distribution will be known on December 10[*](#rationale).
 
 ## Motivation
 
@@ -60,6 +60,7 @@ By having two pre-ignition trading rounds, we allow LPs who missed the first rou
 
 Users who have staked SNX on L2 already have bootstrapped the network by providing crucial sUSD liquidity. By requiring that these stakers also interacted with the Lyra protocol and/or liquidity mining programs, we avoid rewarding idle L2 stakers. 
 
+Distributing the post-ignition market LP rewards on launch day will increase the circulating supply significantly and should support accurate price discovery.
 
 ### Technical Specification
 
@@ -94,7 +95,7 @@ Liquidity and trading rewards for each round are grouped together, since the lat
 
 The security module will be deployed onto Ethereum L1 and allow users to stake USDC to earn LYRA.
 
-#### 5. SNX stakers (October 25 - December 10)
+#### 5. SNX stakers (October 29 - December 10)
 
 | Group          | Rewards |
 | ------------- | ------------- |
