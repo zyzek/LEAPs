@@ -21,7 +21,7 @@ The total supply of LYRA is 1,000,000,000. The token contract can be viewed [her
 
 ### 1. DAO (20%)
 
-200,000,000 LYRA are allocated to the LyraDAO. This DAO aims to ensure the ongoing development of the Lyra Protocol and the general growth of the Lyra ecosystem.
+200,000,000 LYRA are allocated to the LyraDAO. This DAO aims to ensure the ongoing development of the Lyra Protocol and the general growth of the Lyra ecosystem.  In early September, the LyraDAO sold 0.5% of the supply at a $100M FDV.
 
 ### 2. Core Team (20%)
 
