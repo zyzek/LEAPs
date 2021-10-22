@@ -101,7 +101,13 @@ The security module will be deployed onto Ethereum L1 and allow users to stake U
 | ------------- | ------------- |
 | SNX L2 Stakers | 19,000,000 LYRA |
 
-Those who stake SNX on L2 will receive LYRA in proportion with their average debt relative to the total L2 debt over the period.
+Those who stake SNX on L2 between October 29 and December 10 and meet at least one of the below requirements will receive LYRA in proportion with their average debt relative to the total L2 debt over their "eligible period". This period begins when they first meet the eligbility requirements.
+
+Eligibility requirements:
+- Provided liquidity to Uniswap pools containing sUSD
+- Sold sUSD on Uniswap in a non synth pair
+- Traded options on Lyra
+- Provided liquidity to the ETH or LINK markets
 
 #### 6. Retroactive SNX stakers (September 13 - October 10)
 
