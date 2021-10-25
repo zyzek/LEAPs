@@ -33,6 +33,8 @@ Trading rewards for the post-ignition period will be distributed on January 7. M
 
 Tokens will be claimable on Ethereum Mainnet. Those who have earned an amount of less than 1,000 LYRA during the pre-ignition phase or trading competition will be given a choice to claim on either mainnet or OE after the official token launch. LYRA will have the most utility on mainnet however, we recognize that gas costs may be prohibitive for claiming smaller amounts there.
 
+To be able to claim rewards, an address must have earned at least 1 LYRA. This should discourage airdrop farming and minimise distribution costs for the DAO.
+
 ## Motivation
 
 A successful LYRA token launch requires a sufficient % of supply circulating on launch day, a diverse group of token holders, and more sUSD on L2. This LEAP aims to ensure that all of these requirements are met.
