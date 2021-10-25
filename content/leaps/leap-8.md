@@ -8,7 +8,7 @@ created: 2021-9-28
 
 ## Simple Summary
 
-A token distribution plan for Lyra's "ignition phase" between October 25 and January 7, including the official token launch on December 14.
+A token distribution plan for Lyra's "ignition phase" between October 29 and January 7, including the official token launch on December 14.
 
 ## Abstract
 
@@ -31,7 +31,7 @@ All rewards earned during pre-ignition will be distributed on December 14 when t
 
 Trading rewards for the post-ignition period will be distributed on January 7. Market LP rewards for the post-ignition period will be distributed on December 14 with the token launch, since the distribution will be known on December 10[*](#rationale).
 
-Tokens will be claimable on Ethereum Mainnet. Those who have earned an amount of less than 1,000 LYRA during the pre-ignition phase or trading competition will be given a choice to claim on either mainnet or OE after the official token launch.  Lyra tokens will have the most utility on mainnet however, we recognize that gas costs may be prohibitive for claiming smaller amounts there.
+Tokens will be claimable on Ethereum Mainnet. Those who have earned an amount of less than 1,000 LYRA during the pre-ignition phase or trading competition will be given a choice to claim on either mainnet or OE after the official token launch. LYRA will have the most utility on mainnet however, we recognize that gas costs may be prohibitive for claiming smaller amounts there.
 
 ## Motivation
 
@@ -67,7 +67,7 @@ Distributing the post-ignition market LP rewards on launch day will increase the
 
 Liquidity and trading rewards for each round are grouped together, since the latter depends on the former. The security module and SNX staking programs are independent of the trading rounds and addressed separately.
 
-The Council has the right to delay the start of trading round 1 (and potentially alter other rounds), in the event that the ETH wrapper has not been deployed.
+The Council has the right to delay the start of trading round 1 (and potentially alter other rounds), in the event that the ETH wrapper has not been deployed. Exact times for each trading round will be provided at least 48 hours before it starts.
 
 #### 1. Trading Round 1 (November 5  - November 19)
 
@@ -90,7 +90,7 @@ The Council has the right to delay the start of trading round 1 (and potentially
 | Lyra Market LPs | 12,000,000 LYRA |
 | Lyra Traders[*](#trading-rewards) | Up to 1,600,000 LYRA |
 
-#### 4. Security Module (November 2 - January 7)
+#### 4. Security Module (November 2 00:00 UTC - January 7 00:00 UTC)
 
 | Group          | Rewards |
 | ------------- | ------------- |
@@ -98,7 +98,7 @@ The Council has the right to delay the start of trading round 1 (and potentially
 
 The security module will be deployed onto Ethereum L1 and allow users to stake USDC to earn LYRA.
 
-#### 5. SNX stakers (October 29 - December 10)
+#### 5. SNX stakers (October 29 00:00 UTC - December 10 00:00 UTC)
 
 | Group          | Rewards |
 | ------------- | ------------- |
@@ -110,9 +110,9 @@ Eligibility requirements:
 - Provided liquidity to Uniswap pools containing sUSD
 - Sold sUSD on Uniswap in a non synth pair
 - Traded options on Lyra
-- Provided liquidity to the ETH or LINK markets
+- Provided liquidity to ANY Lyra Market Pool (i.e ETH or LINK)
 
-#### 6. Retroactive SNX stakers (September 13 - October 10)
+#### 6. Retroactive SNX stakers (September 13 00:00 UTC - October 10 00:00 UTC)
 
 | Group          | Rewards |
 | ------------- | ------------- |
@@ -124,7 +124,7 @@ Eligibility requirements:
 - Provided liquidity to Uniswap pools containing sUSD
 - Sold sUSD on Uniswap in a non synth pair
 - Traded options on Lyra
-- Provided liquidity to the ETH or LINK markets
+- Provided liquidity to ANY Lyra Market Pool (i.e ETH or LINK)
 
 ### Trading Rewards
 
