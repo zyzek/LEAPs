@@ -4,7 +4,6 @@ title: Launch LYRA Token
 status: Draft
 author: mjs (@mjs-12), Nick Forster (@nickf24), Sean Dawson (@SeanDaws), Domrom (@DominicRomanowski), SteveNX, Burt Rock
 created: 2021-9-28
-requires: LEAP-5
 ---
 
 ## Simple Summary
@@ -68,6 +67,8 @@ Distributing the post-ignition market LP rewards on launch day will increase the
 
 Liquidity and trading rewards for each round are grouped together, since the latter depends on the former. The security module and SNX staking programs are independent of the trading rounds and addressed separately.
 
+The Council has the right to delay the start of trading round 1 (and potentially alter other rounds), in the event that the ETH wrapper has not been deployed.
+
 #### 1. Trading Round 1 (November 5  - November 19)
 
 | Group          | Rewards |
@@ -89,7 +90,7 @@ Liquidity and trading rewards for each round are grouped together, since the lat
 | Lyra Market LPs | 12,000,000 LYRA |
 | Lyra Traders[*](#trading-rewards) | Up to 1,600,000 LYRA |
 
-#### 4. Security Module (November 1 - January 7)
+#### 4. Security Module (November 2 - January 7)
 
 | Group          | Rewards |
 | ------------- | ------------- |
@@ -103,7 +104,7 @@ The security module will be deployed onto Ethereum L1 and allow users to stake U
 | ------------- | ------------- |
 | SNX L2 Stakers | 19,000,000 LYRA |
 
-Those who stake SNX on L2 between October 29 and December 10 and meet at least one of the below requirements will receive LYRA in proportion with their average debt relative to the total L2 debt over their "eligible period". This period begins when they first meet the eligbility requirements.
+Those who stake SNX on L2 between October 29 and December 10 and meet at least one of the below eligibility requirements will receive a share of 19,000,000 LYRA. Once they have become eligible, they will begin receiving a share of LYRA in proportion with their debt relative to the total eligible debt. These rewards will be computed in 3 hour epochs.
 
 Eligibility requirements:
 - Provided liquidity to Uniswap pools containing sUSD
@@ -117,7 +118,7 @@ Eligibility requirements:
 | ------------- | ------------- |
 | SNX L2 Stakers | 1,000,000 LYRA |
 
-Those who staked SNX on L2 between September 13 and October 10 and meet at least one of the below requirements will receive LYRA in proportion with their average debt relative to the total L2 debt over their "eligible period". This period begins when they first meet the eligbility requirements.
+Those who staked SNX on L2 between September 13 and October 10 and meet at least one of the below eligibility requirements will receive a share of 1,000,000 LYRA. Once they became eligible, they will begin receiving a share of LYRA in proportion with their debt to the total eligible debt. These rewards will be computed in 3 hour epochs.
 
 Eligibility requirements:
 - Provided liquidity to Uniswap pools containing sUSD
