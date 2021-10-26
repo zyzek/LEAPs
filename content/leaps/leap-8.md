@@ -1,7 +1,7 @@
 ---
 leap: 8
 title: Launch LYRA Token
-status: Proposed
+status: Approved
 author: mjs (@mjs-12), Nick Forster (@nickf24), Sean Dawson (@SeanDaws), Domrom (@DominicRomanowski), SteveNX, Burt Rock
 created: 2021-9-28
 ---
