@@ -2,7 +2,7 @@
 LEAP: 9
 title: Launch BTC Market
 status: Draft
-author: @nickf24
+author: Nick Forster(@nickf24)
 created: 2021-10-27
 ---
 
