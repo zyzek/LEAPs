@@ -1,7 +1,7 @@
 ---
 leap: 9
 title: Launch BTC Market
-status: Draft
+status: Proposed
 author: Nick Forster (@nickf24)
 created: 2021-10-27
 ---
