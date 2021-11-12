@@ -10,7 +10,7 @@ created: 2021-11-12
 
 ## Simple Summary
 <!--"If you can't explain it simply, you don't understand it well enough." Simply describe the outcome the proposed changes intends to achieve. This should be non-technical and accessible to a casual community member.-->
-Extend the [Lyra Launch Council](https://blog.lyra.finance/introducing-the-lyra-launch-council/) until January 31, 2022, so that it can oversee the launch of the LYRA token. The next council will be elected on February 1, 2022, by the LYRA token holders.
+Extend the [Lyra Launch Council](https://blog.lyra.finance/introducing-the-lyra-launch-council/) until January 31, 2022, so that it can oversee the launch of the LYRA token. The LYRA token holders will elect the next council on January 28, 2022, to begin its term on February 1, 2022.
 
 ## Abstract
 <!--A short (~200 word) description of the proposed change, the abstract should clearly describe the proposed change. This is what *will* be done if the LEAP is implemented, not *why* it should be done or *how* it will be done. If the LEAP proposes deploying a new contract, write, "we propose to deploy a new contract that will do x".-->
@@ -42,7 +42,7 @@ By maintaining the current council structure throughout the token launch, we min
 ### Overview
 <!--This is a high level overview of *how* the LEAP will solve the problem. The overview should clearly describe how the new feature will be implemented.-->
 
-The Lyra Council will retain the same members until January 31, 2022. A new council be elected on February 1, 2022. The specifics of the election process will be proposed in a separate LEAP.
+The Lyra Council will retain the same members until January 31, 2022. The LYRA token holders will elect the next council on January 28, 2022, to begin its term on February 1, 2022. The specifics of the election process will be proposed in a separate LEAP.
 
 ### Rationale
 <!--This is where you explain the reasoning behind how you propose to solve the problem. Why did you propose to implement the change in this way, what were the considerations and trade-offs. The rationale fleshes out what motivated the design and why particular design decisions were made. It should describe alternate designs that were considered and related work. The rationale may also provide evidence of consensus within the community, and should discuss important objections or concerns raised during discussion.-->
@@ -71,8 +71,9 @@ Not applicable for this LEAP as there is no implementation.
 ### Configurable Values
 <!--Please list all values configurable under this implementation.-->
 ```
-Council End Date = January 31, 2022
-Election = February 1, 2022
+Launch Council End Date = January 31, 2022
+Election Date = January 28, 2022
+New Council Start Date = February 1, 2022
 ```
 
 ## Copyright
