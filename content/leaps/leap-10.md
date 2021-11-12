@@ -72,7 +72,7 @@ Not applicable for this LEAP as there is no implementation.
 <!--Please list all values configurable under this implementation.-->
 ```
 Launch Council End Date = January 31, 2022
-Election Date = January 28, 2022
+New Council Election Date = January 28, 2022
 New Council Start Date = February 1, 2022
 ```
 
