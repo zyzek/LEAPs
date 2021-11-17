@@ -1,7 +1,7 @@
 ---
 leap: 10
 title: Extend Lyra Launch Council
-status: Proposed
+status: Approved
 author: mjs (@mjs-12)
 created: 2021-11-12
 ---
