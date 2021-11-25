@@ -19,8 +19,7 @@ The details of the distribution will be left to the discretion of the core contr
 
 <!--This is the problem statement. This is the *why* of the LEAP. It should clearly explain *why* the current state of the protocol is inadequate.  It is critical that you explain *why* the change is needed, if the LEAP proposes changing how something is calculated, you must address *why* the current calculation is innaccurate or wrong. This is not the place to describe how the LEAP will address the issue!-->
 
-Lyra's Ignition program has successfully driven usage and volume of the platform. For the Lyra DAO to succeed, however, governance tokens and decision making must be distributed to a large base with a diverse skillset, and to community members whose value-add differs from liquidity provision (engaged active community members, traders and LPs alike). 
-This LEAP will ensure that the core contributors can widely distribute the token to such community members, so that good governance can be achieved following December 14th.
+Lyra's Ignition program has successfully driven usage and volume of the platform. For the Lyra DAO to succeed, however, governance tokens and decision making must be distributed to a large base of holders. These holders should ideally have a diverse set of skills and perspectives, including engaged active community members, traders and LPs alike. This LEAP will ensure that the core contributors can widely distribute the token to such community members, so that good governance can be achieved following December 14th.
 
 ## Specification
 
