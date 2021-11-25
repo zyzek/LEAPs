@@ -10,7 +10,7 @@ created: 2021-11-25
 
 ## Simple Summary
 <!--"If you can't explain it simply, you don't understand it well enough." Simply describe the outcome the proposed changes intends to achieve. This should be non-technical and accessible to a casual community member.-->
-The success of Lyra thus far has been in large part due to the vibrant Discord community and the early users and LPs of the protocol. This LEAP requests that the Council authorize up to 15,000,000 LYRA tokens (1.5% of total supply) to be distributed to community members and users of the Protocol, with a snapshot of relevant contributions to be taken at 11:00 UTC Time 25/11/2021. 
+The success of Lyra thus far has been in large part due to the vibrant Discord community and the early users and LPs of the protocol. This LEAP requests that the Council authorize up to 15,000,000 LYRA tokens (1.5% of total supply) to be distributed to community members and users of the Protocol, with a snapshot of relevant contributions to be taken at 22:00 UTC Time 25/11/2021. 
 
 ## Abstract
 <!--A short (~200 word) description of the proposed change, the abstract should clearly describe the proposed change. This is what *will* be done if the LEAP is implemented, not *why* it should be done or *how* it will be done. If the LEAP proposes deploying a new contract, write, "we propose to deploy a new contract that will do x".-->
