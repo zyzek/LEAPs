@@ -1,8 +1,8 @@
 ---
 leap: 12
-title: Launch LYRA on Optimism
+title: Distribute LYRA on Optimism
 status: Draft
-author: Michael Spain (@mjs-12)
+author: mjs (@mjs-12)
 created: 2021-11-29
 ---
 
@@ -14,11 +14,11 @@ Conduct the full distribution of LYRA on Optimism and commence a one-month liqui
 
 ## Abstract
 <!--A short (~200 word) description of the proposed change, the abstract should clearly describe the proposed change. This is what *will* be done if the LEAP is implemented, not *why* it should be done or *how* it will be done. If the LEAP proposes deploying a new contract, write, "we propose to deploy a new contract that will do x".-->
-This LEAP proposes the specifics of the LYRA token launch, which includes two components. First is the actual distribution itself, which requires a discussion of the tradeoffs between launching on Optimism and L1. Second is the liquidity program, which is designed to bootstrap a liquid market that enables effective price discovery.
+This LEAP proposes the specifics of the LYRA token launch, which includes two components. First is the actual distribution itself, which requires a discussion of the tradeoffs between launching on Optimism and L1. Second is the liquidity program, which is designed to bootstrap enough liquidity that enables effective price discovery.
 
 ##  Motivation
 <!--This is the problem statement. This is the *why* of the LEAP. It should clearly explain *why* the current state of the protocol is inadequate.  It is critical that you explain *why* the change is needed, if the LEAP proposes changing how something is calculated, you must address *why* the current calculation is innaccurate or wrong. This is not the place to describe how the LEAP will address the issue!-->
-The current plan outlined in [LEAP-8] separates the LYRA distribution between L1 and Optimism, in an attempt to minimise gas costs for smaller recipients. However, with gas consistently above 100 gwei, L1 is unsuitable for almost all users and distributing the token on two networks increases technical complexity and fragments liquidity. A unified distribution will increase the chance of a successful launch and allow liquidity incentives to be more effective. While Optimism is clearly superior from a cost perspective, there are far fewer protocols deployed. This limits the choices available for building liquidity programs.
+The current plan outlined in [LEAP-8] separates the LYRA distribution between L1 and Optimism, in an attempt to minimise gas costs for smaller recipients. However, with gas consistently above 100 gwei, L1 is unsuitable for almost all users and distributing the token on two networks increases technical complexity and fragments liquidity. 
 
 ## Specification
 
@@ -32,7 +32,9 @@ The current plan outlined in [LEAP-8] separates the LYRA distribution between L1
 
 ### Overview
 <!--This is a high level overview of *how* the LEAP will solve the problem. The overview should clearly describe how the new feature will be implemented.-->
-To begin, we provide a breakdown of the ~66m LYRA to be distributed on December 14. The final number will depend on the trading rewards for the second round of ignition.
+A unified distribution will increase the chance of a successful launch and allow liquidity incentives to be more effective. While Optimism is clearly superior from a cost perspective, there are far fewer protocols deployed, limiting the choices available for liquidity programs.
+
+First, we provide a breakdown of the ~66m LYRA to be distributed on December 14. The final number will depend on the trading rewards for the second round of ignition.
 
 | Group  | Reward      |
 | ----------- | ----------- |
@@ -57,9 +59,9 @@ We cannot make the assumption that all users wish to keep their LYRA on Optimism
 
 #### 3. LYRA Liquidity Program
 
-A successful token launch requires enough liquidity to enable price discovery. The choice of platform to distribute affects the options available to the protocol to build liquidity. On L1, there are several innovative models such as protocol owned liquidity and efficient renting, whereas Optimism only supports liquidity mining via Uniswap V3, which itself has several risks.
+A successful token launch requires enough liquidity to enable price discovery. By choosing to launch on Optimism, we are limited in the methods at our disposal. On L1, there are innovative bonding models that enable protocols to purchase liquidity, whereas Optimism currently only supports traditional liquidity mining via Uniswap V3.
 
-Uniswap v3 affords liquidity providers more flexibility than v2. However, it also makes on-chain staking incentives difficult. The Uniswap v3 staking contract allows large one tick liquidity positions to accumulate the majority of rewards. Ribbon's LM program has been a victim of this behaviour.
+Uniswap v3 affords liquidity providers more flexibility than v2. However, it also makes on-chain staking incentives difficult. The staking contract allows large one tick liquidity positions to accumulate the majority of rewards. Ribbon's LM program has been a victim of this behaviour.
 
 For the launch of LYRA, we want to enjoy the benefits of Optimism without incurring any additional risks. That is why we are proposing a program that rewards full range positions only. By approximating V2, we lose capital efficiency but greatly reduce the chance of being exploited. Rewards will be computed off-chain in the same way that the ignition program has worked. The program will run for one month, after which it may be extended or alternative methods may be used if they have come online by then.
 
@@ -87,6 +89,3 @@ maxPrice: Infinity
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
-
-
-A classic Synthetix StakingRewards style contract adapted for Uniswap v3 has been implemented by Andre Cronje [here](https://github.com/keep3r-network/StakingRewardsV3/blob/master/contracts/StakingRewardsV3-1.sol). However, it is yet to be deployed in a mainnet enviornment and therefore also carries significant risks.
