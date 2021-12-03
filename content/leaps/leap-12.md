@@ -18,7 +18,7 @@ This LEAP proposes the specifics of the LYRA token launch, which includes two co
 
 ##  Motivation
 <!--This is the problem statement. This is the *why* of the LEAP. It should clearly explain *why* the current state of the protocol is inadequate.  It is critical that you explain *why* the change is needed, if the LEAP proposes changing how something is calculated, you must address *why* the current calculation is innaccurate or wrong. This is not the place to describe how the LEAP will address the issue!-->
-The current plan outlined in [LEAP-8] separates the LYRA distribution between L1 and Optimism, in an attempt to minimise gas costs for smaller recipients. However, with gas consistently above 100 gwei, L1 is unsuitable for almost all users and distributing the token on two networks increases technical complexity and fragments liquidity. 
+The current plan outlined in [LEAP-8](https://leaps.lyra.finance/leaps/leap-8) separates the LYRA distribution between L1 and Optimism, in an attempt to minimise gas costs for smaller recipients. However, with gas consistently above 100 gwei, L1 is unsuitable for almost all users and distributing the token on two networks increases technical complexity and fragments liquidity. 
 
 ## Specification
 
