@@ -52,7 +52,7 @@ First, we provide a breakdown of the ~66m LYRA to be distributed on December 14.
 <!--The technical specification should outline the public API of the changes proposed. That is, changes to any of the interfaces Lyra currently exposes or the creations of new ones.-->
 
 #### 1. Distribution
-All 66m LYRA will be distributed on Optimism via this [distribution contract](https://github.com/lyra-finance/lyra-governance/blob/master/contracts/token/LyraDistributor.sol). Each address will contain a single entry that holds the cumulative LYRA they have earned across all programs. Tokens will become claimable on December 14 at 00:00 UTC which corresponds to `1639440000` in Unix time.
+All 66m LYRA will be distributed on Optimism via this [distribution contract](https://github.com/lyra-finance/lyra-protocol/blob/master/contracts/governance/LyraDistributor.sol). Each address will contain a single entry that holds the cumulative LYRA they have earned across all programs. Tokens will become claimable on December 14 at 00:00 UTC which corresponds to `1639440000` in Unix time.
 
 #### 2. Fast Bridge
 We cannot make the assumption that all users wish to keep their LYRA on Optimism. With the current one week withdrawal period, a user who wishes to migrate back to L1 will have a very poor experience. To mitigate this, the LYRA token will be supported by Celer on their [cBridge](https://cbridge.celer.network/#/transfer), providing a fast transfer experience between Optimism and Ethereum mainnnet. The Lyra DAO will seed LYRA into the cBridge pools on Ethereum and Optimism.
@@ -67,9 +67,9 @@ For the launch of LYRA, we want to enjoy the benefits of Optimism without incurr
 
 ```
 Pool: LYRA/ETH
-Amount: 5,000,000
+Amount: 1,000,000
 Start: 1639440000
-End: 1610582400
+End: 1670976020
 minPrice: 0
 maxPrice: Infinity
 ```
@@ -80,9 +80,9 @@ The values pertaining to the liquidity mining program are configurable and may b
 
 ```
 Pool: LYRA/ETH
-Amount: 5,000,000
+Amount: 1,000,000
 Start: 1639440000
-End: 1610582400
+End: 1670976020
 minPrice: 0
 maxPrice: Infinity
 ```
