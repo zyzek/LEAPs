@@ -63,7 +63,9 @@ A successful token launch requires enough liquidity to enable price discovery. B
 
 Uniswap v3 affords liquidity providers more flexibility than v2. However, it also makes on-chain staking incentives difficult. The staking contract allows large one tick liquidity positions to accumulate the majority of rewards. Ribbon's LM program has been a victim of this behaviour.
 
-For the launch of LYRA, we want to enjoy the benefits of Optimism without incurring any additional risks. That is why we are proposing a program that rewards full range positions only. By approximating V2, we lose capital efficiency but greatly reduce the chance of being exploited. Rewards will be computed off-chain in the same way that the ignition program has worked. The program will run for one month, after which it may be extended or alternative methods may be used if they have come online by then.
+For the launch of LYRA, we want to enjoy the benefits of Optimism without incurring any additional risks. That is why we are proposing a program that rewards full range positions only. By approximating V2, we lose capital efficiency but greatly reduce the chance of being exploited. R The program will run for one month, after which it may be extended or alternative methods may be used if they have come online by then.
+
+Rewards will be computed off-chain using the same infrastructure as the ignition program and will be distributed at the conclusion of the program via the distribution contract.
 
 ```
 Pool: LYRA/ETH
