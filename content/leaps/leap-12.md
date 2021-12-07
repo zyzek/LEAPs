@@ -69,9 +69,10 @@ Rewards will be computed off-chain using the same infrastructure as the ignition
 
 ```
 Pool: LYRA/ETH
+Fee Tier: 1%
 Amount: 1,000,000
 Start: 1639440000
-End: 1670976020
+End: 1642118400
 minPrice: 0
 maxPrice: Infinity
 ```
@@ -82,9 +83,10 @@ The values pertaining to the liquidity mining program are configurable and may b
 
 ```
 Pool: LYRA/ETH
+Fee Tier: 1%
 Amount: 1,000,000
 Start: 1639440000
-End: 1670976020
+End: 1642118400
 minPrice: 0
 maxPrice: Infinity
 ```
